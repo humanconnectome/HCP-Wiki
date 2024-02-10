@@ -12,7 +12,8 @@ permalink: # date # how your URLs are built, see https://jekyllrb.com/docs/perma
 
 # timezone: America/Los_Angeles # see https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
-theme: just-the-docs
+# theme: just-the-docs
+remote_theme: carlosperate/jekyll-theme-rtd
 # remote_theme: pages-themes/slate@v0.2.0
 # plugins: 
 - jekyll-remote-theme # add this line to the plugins list if you already have one
