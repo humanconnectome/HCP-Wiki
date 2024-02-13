@@ -1,3 +1,4 @@
+## Advice on editing HCP tfMRI E-Prime Scripts
 
 HCP provides a [link for downloading the E-Prime scripts](https://db.humanconnectome.org/app/action/ChooseDownloadResources?project=HCP_Resources&resource=Scripts&filePath=HCP_TFMRI_scripts.zip) that we use for the 7 tfMRI tasks in the HCP protocol on the [HCP project page](https://db.humanconnectome.org/data/projects/HCP_1200) in ConnectomeDB.The HCP E-Prime scripts were created with E-Prime 2.0 Professional (2.0.10.242).
 
@@ -15,7 +16,7 @@ B) change subject display events from the secondary monitor (display index = 2) 
 C) delete the primary monitor display (called "Laptop") from E-Prime "Experiment Object Properties" window  
 D) change the remaining monitor display (called "LCD" or "ScannerD2") from display index of "2" to index of "1".  
   
-## Be aware that many HCP E-Prime scripts contain inline code that addresses objects linked to both display devices. It is therefore critical that you check the timing and functionality of the script after modifying events or displays within the E-Prime code.  
+### Be aware that many HCP E-Prime scripts contain inline code that addresses objects linked to both display devices. It is therefore critical that you check the timing and functionality of the script after modifying events or displays within the E-Prime code.  
 ============================================================
 
 ### Changing input devices and key assignments:
