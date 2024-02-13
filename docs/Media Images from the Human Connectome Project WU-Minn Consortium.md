@@ -1,3 +1,5 @@
+## Media Images from the Human Connectome Project WU-Minn Consortium
+
 > [!note] 
 > Please be sure to incorporate the credit when using these images. Please include the link to http://humanconnectome.org. There are multiple websites dedicated to the Human Connectome Project. Linking to the proper site helps avoid reader/user confusion.Please also send an email to elam@wustl.edu when your article/blog post is published so that we can track its publication for our grant and highlight it on our website. Thank you!
  
@@ -24,7 +26,7 @@ Download all of these images in a single ZIP archive: [HCP_Media_Images.zip](./
 
 
 
-# Attachments
+### Attachments
 
 - [HCP_Media_Images.zip](./assets/HCP_Media_Images.zip)
 - ![](./assets/Probabilistic_%20Tractography.png)
