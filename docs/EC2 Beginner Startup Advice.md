@@ -1,3 +1,4 @@
+## EC2 Beginner Startup Advice
 
 If you are interested in developing tools or analyzing S3-stored HCP data in the cloud, you will want to set up an **EC2 (Amazon Elastic Compute Cloud) instance**. We recommend reading about EC2 details, instances, pricing, etc. at these links:
 
