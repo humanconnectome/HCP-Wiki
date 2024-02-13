@@ -1,3 +1,5 @@
+## Advice for FEAT Analysis of HCP task fMRI data.
+
 For users who would like to run their own group analyses on task fMRI data, the simplest way currently is to begin with the "Level 2" analyses that are included as part of the 500 Subject Release. The precomputed second-level analyses are Fixed Effects analyses which effectively combine the two first-level analyses. Thus, the output is basically equivalent to combining the two lower-level datasets and doing a single timeseries (lower-level FEAT) analysis. The 500 Subject Release included subject-level ("Level 2") analyses in both volume and grayordinate spaces (at various smoothing levels), and is the preferable set of data to use because it features some improvements to registration.
 
 ### Higher-level Analysis
