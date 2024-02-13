@@ -1,3 +1,4 @@
+## Scaling differences across 3T and 7T Scanners at UMinn WashU Mt. Sinai
 
 All 3T scanners tested (Siemens Skyra, Prisma, Trio?) are within 1% of a "ground truth" CT scan.
 
