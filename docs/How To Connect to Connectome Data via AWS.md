@@ -1,8 +1,10 @@
-## Introduction
+## How To Connect to Connectome Data via AWS
+
+### Introduction
 
 The Human Connectome Project is now making image data available to use directly with Amazon Web Services, without you having to download from ConnectomeDB or order Connectome in a Box drives. This tutorial will show you how to get a set of AWS credentials and connect to HCP data via Amazon S3. Amazon S3 can be used for cloud-based HCP data processing (Amazon charges users for compute cycles) or as an alternative to Aspera for download of HCP data at no cost to the user (Note: in most cases, downloading HCP data through Amazon S3 WILL NOT be faster than Aspera-driven data download through ConnectomeDB). Information on setting up an AWS EC2 instance and processing is available here: **[EC2 Beginner Startup Advice](./EC2%20Beginner%20Startup%20Advice.md)**.
 
-## HCP Datasets on AWS
+### HCP Datasets on AWS
 
 After logging in to ConnectomeDB (<https://db.humanconnectome.org)>, you will see a list of datasets that we are hosting. Each dataset that is available on AWS will have an icon in its dataset listing, as shown: 
 
@@ -10,7 +12,7 @@ After logging in to ConnectomeDB (<https://db.humanconnectome.org)>, you will se
 
 You will only need one set of credentials to access all datasets on AWS, but that access will be controlled by your acceptance of each dataset's data use terms.  When new datasets are added to AWS, the only action you will need to take (if you already have AWS credentials) is to review and accept the data use terms for each new dataset.
 
-## Creating AWS Credentials
+### Creating AWS Credentials
 
  ![](./assets/image2015-1-7%2014:37:20.png) 
 
@@ -22,7 +24,7 @@ AWS returns a set of credentials. Your AWS login will be the same as your Connec
 
  ![](./assets/image2015-1-7%2014:41:22.png) 
 
-## Connecting to AWS Data Using These Credentials
+### Connecting to AWS Data Using These Credentials
 
 There are a number of ways and applications that can be used to connect to the HCP data container on AWS. Here is one example, using [Amazon S3 Browser](http://s3browser.com/), a free software package for Windows that lets you browse data on AWS from your desktop.  [CyberDuck](https://cyberduck.io/) is another such free software client, available for both Mac and Windows. 
 
@@ -43,14 +45,14 @@ If not...
 
 *Note: you will also see the "hcp-openaccess-logs" bucket, but you should not have, or need, access to this.*
 
-## Regenerating your Credentials
+### Regenerating your Credentials
 
 If for any reason you lose your original set of credentials, you can reset them via ConnectomeDB by clicking on the "Amazon S3 Access" button associated with each hosted dataset. This will open a familiar-looking modal window. One click and new credentials will be generated. **Note: This will replace your existing set of credentials. Any attempt to log in with your old credentials will not work.**
 
   
 
 
-## Working with Amazon Public Datasets - Getting Started
+### Working with Amazon Public Datasets - Getting Started
 
 This connection tutorial assumes that you already have working experience with Amazon Public Data Sets. If this is your first time, please read the following tutorial provided by the Amazon Web Services team: **[AWS Documentation: Using Public Data Sets](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-public-data-sets.html)**. You may also find this Q&A on the BioStars Bioinformatics forum helpful: **[Question: Using Amazon Web Services?](https://www.biostars.org/p/3643/)**
 
@@ -63,7 +65,7 @@ Also, please take note: while we freely distribute HCP data, there may be costs 
 
 
 
-# Attachments
+### Attachments
 
 - ![](./assets/image2015-2-10 10:54:29.png)
 - ![](./assets/image2015-2-6 15:32:46.png)
