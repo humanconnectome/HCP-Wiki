@@ -1,3 +1,4 @@
+## Connectome In A Box Notice for the 1200 Subjects Data Release
 
 Unlike previous data releases that we have shipped on "Connectome In A Box" hard drives, **we are distributing image session data as .zip packages for the 1200 Subjects data release**. This was done to reduce file I/O during the drive duplication process, which radically reduces the number of errors and failed drives that we encounter. It also reduces the number of 8-TB hard drives necessary to ship this data release from 13 to 12. 
 
