@@ -1,3 +1,5 @@
+## How to Create an EC2 instance for HCP Pipeline Processing
+
 This guide was originally written for participants in the course *[Exploring the Human Connectome 2017](https://store.humanconnectome.org/courses/2017/exploring-the-human-connectome.php)* and is based on similar materials prepared for the 2015 and 2016 editions of the course.
 
 During the course, an optional practical session titled *Cloud-based Processing Using HCP Pipelines and Amazon Web Services* was held. That session was devoted to a demonstration of *Creating an EC2 instance for HCP Pipeline Processing.* That demonstration was intended to give participants a general feel for what is necessary to create such an EC2 instance. However, participants were not expected to actually execute the process during the demonstration. 
@@ -14,7 +16,7 @@ This guide assumes that you already have an AWS account. If you do not have an A
 
 ***Some of the steps in this guide use services that are part of AWS that are not in the Free Tier of AWS. That means that in carrying out these steps, there may be charges from Amazon to the credit card associated with your AWS account.***
 
-## Step 1a: Login to AWS
+### Step 1a: Login to AWS
 
 * Open a web browser and visit <https://aws.amazon.com/console>.
 * Select the  ![](./assets/SignInToConsole.png)  button in the upper right hand corner of the browser.
@@ -32,7 +34,7 @@ Figure 1: Amazon AWS Console
 * Note: Amazon changes the way the console looks from time to time, and the way your console looks changes based upon your recent AWS activities. So don't be too concerned if your AWS Console doesn't match the figure exactly.
 * In the upper right of the web page, just to the right of the name associated with your account, there is a region indication (e.g. N. Virginia, Ohio, Oregon, Ireland, Sydney, etc.) At the time these instructions were written, the AMI that we will be using is available only in the US East (N. Virginia) region. If your region indication does not read *N. Virginia*, select the down arrow to the right of the region and select *US East (N. Virgina).*
 
-## Step 1b: Start Creating an Instance
+### Step 1b: Start Creating an Instance
 
 * We want to create a Virtual Machine (VM) in the Amazon Cloud on which to run HCP Pipelines. In AWS terms, that means creating an EC2 instance.
 * Starting at the Services menu (near the upper left) navigate: *Services → Compute → EC2* (See Figure 2).
@@ -50,7 +52,7 @@ Figure 2: Selecting the EC2 service
 
 Figure 3: EC2 Dashboard
 
-## Step 2: Launch an EC2 Instance
+### Step 2: Launch an EC2 Instance
 
 * Select the  ![](./assets/LaunchInstanceButton.png) button
 * We are configuring a "computer". Our first task is to select the base software
@@ -68,7 +70,7 @@ Figure 4: Choose and AMI page
 * The *AWS Marketplace* tab is for AMIs that are verified by AWS.
 * The *Community AMIs* are for AMIs that users have made available but have not be verified by AWS.
 
-## Step 3: Find and Select an AMI
+### Step 3: Find and Select an AMI
 
 * Select the *AWS Marketplace* tab.
 * In the search box, enter NITRC
@@ -85,7 +87,7 @@ Figure 5: Result of searching for NITRC within the *AWS Marketplace* AMIs
 * Note: By the time you use these instructions NITRC may have released an updated version of the NITRC-HCP-CE. If so, your search results may look different than Figure 5. You will probably benefit from using the latest version they have released. However, if you use a later version of the NITRC-HCP-CE and find that things are not working as described here, you might need to revert back to using the latest version as of this writing (V0.44-HCP)
 * Press the  ![](./assets/SelectButton.png) button to the right of the AMI to use.
 
-## Step 4: Select an Instance Type
+### Step 4: Select an Instance Type
 
 * Having selected the base software, now it's time to select the "hardware"
 * This is like selecting a computer you are going to buy. (In this case rent.)
@@ -99,7 +101,7 @@ Figure 5: Result of searching for NITRC within the *AWS Marketplace* AMIs
 
 Figure 6: Choosing the m3.xlarge Instance Type
 
-## Step 5: Add Storage
+### Step 5: Add Storage
 
 * Next we'd like to add some EBS storage that will be attached to this machine like an external drive. It will outlive the machine.
 * We are not yet ready to *Review and Launch* the instance. Instead, select the  ![](./assets/NextConfigure.png) button, followed by the  ![](./assets/NextAddStorage.png) button.
@@ -119,7 +121,7 @@ Figure 7: Add Storage page
 
 Figure 8: Configuration of "external" volume
 
-## Step 6: Tag Your Instance
+### Step 6: Tag Your Instance
 
 * Select the  ![](./assets/AddTags.png) button.
 * Tagging is optional, but can be used to label attributes of you instance and to give your instance a "name" by which you can recognize it and refer to it.
@@ -135,7 +137,7 @@ Figure 9: Tagging your instance
 
 * Select the  ![](./assets/configsecuritygroup.png) button.
 
-## Step 7: Configure Security Group
+### Step 7: Configure Security Group
 
 * A security group is a set of firewall rules that control the traffic for your instance.
 * We need to use security settings that allow traffic through ports that will be used by SSH for accessing our machine instance and through ports that are used for communication between a VNC Server and VNC Clients.
@@ -143,13 +145,13 @@ Figure 9: Tagging your instance
 * NITRC has created a security group and given it a name like "NITRC Human Connectome Project Computational Environment-v0-44-HCP-AutogenByAWSMP-"
 * We do not need to change this security information.
 
-## Step 8: Review your instance
+### Step 8: Review your instance
 
 * Select the  ![](./assets/ReviewAndLaunch.png) button.
 * Review your instance settings.
 * Notice the warnings about the security settings and about the instance not being free.
 
-## Step 9: Create access keys
+### Step 9: Create access keys
 
 * Select the  ![](./assets/launchbutton.png) button
 * You should be presented with a dialog asking about a key pair
@@ -168,7 +170,7 @@ Figure 10: Creating a new key pair
 * Finally, select the  ![](./assets/launchinstancesbutton.png) button to actually launch your instance.
 * Now your instance will be launching (i.e. booting up)
 
-## Step 10: Gather information
+### Step 10: Gather information
 
 * There are some pieces of information about your instance that you will need to have in order to access (log on to) it.
 * Take note of your instance ID (see Figure 11).
@@ -192,7 +194,7 @@ Figure 11: Instance ID
 
 Figure 12: Table entry for a running instance
 
-## Step 11: NITRC-HCP-CE Configuration - Part 1
+### Step 11: NITRC-HCP-CE Configuration - Part 1
 
 * In a separate browser tab, visit your running instance at it's public DNS
 * A NITRC-HCP-CE has a web server running so you can visit it via a browser and perform the necessary configuration
@@ -225,7 +227,7 @@ Figure 13: NITRC-HCP-CE account successfully configured
 
 * You now have a running EC2 instance to which you can login.
 
-## Step 12: NITRC-HCP-CE Configuration - Part 2
+### Step 12: NITRC-HCP-CE Configuration - Part 2
 
 * The NITRC-HCP-CE provides a Control Panel
 * It allows you to:  
@@ -252,7 +254,7 @@ Figure 14: NITRC-HCP-CE Control Panel
 	+ Don't forget to select the *Submit Query* button after you have entered your license information in the text area.
 		- If there is an error writing the FreeSurfer license file, you will need to follow the instructions to save it manually at /usr/local/freesurfer/.license. You'll do this after successfully logging on to your instance. You will need to be the "root" user to edit/create the /usr/local/freesurfer/.license file. We will see how to become the root user in a subsequent step.
 
-## Step 13: NITRC-HCP-CE Configuration - Part 3
+### Step 13: NITRC-HCP-CE Configuration - Part 3
 
 * Select the *Settings* tab of the Control Panel
 * This is where we will configure our S3 Access and mount the HCP OpenAccess S3 bucket using s3fs
@@ -276,7 +278,7 @@ Figure 15: After applying AWS credentials
 
 Figure 16: Successful mounting of HCP S3 bucket
 
-## Step 14: Access your instance via VNC/Guacamole
+### Step 14: Access your instance via VNC/Guacamole
 
 * Select the *Console* tab
 * If you do not see a  ![](./assets/connectButton.png) button, then select the  ![](./assets/startSession.png) button to start a VNC server session on your running instance.
@@ -312,7 +314,7 @@ Figure 18: Connected to a VNC server session
 * more ~/tools/Pipelines/version.txt to see the version of the HCP Pipeline Scripts installed
 	+ Note: You may want to override this by installing a different version of the HCP Pipeline Scripts
 
-## Step 15: Access your instance via SSH
+### Step 15: Access your instance via SSH
 
 * Open a Terminal on your local machine
 * Issue a command like:  
@@ -328,7 +330,7 @@ ssh -Y hcpuser@<your-public-dns>
 * You now have a simple terminal connection to your running instance
 	+ Not particularly good for GUI stuff, but better for editing files and pipeline running
 
-## Step 16: Mounting your "external" EBS drive - Part 1
+### Step 16: Mounting your "external" EBS drive - Part 1
 
 * Notice what disk space you have available  
   
@@ -397,7 +399,7 @@ Writing superblocks and filesystem accounting information: done
 hcpuser@nitrcce:~$
 ```
 
-## Step 17: Mounting your "external" EBS drive - Part 2
+### Step 17: Mounting your "external" EBS drive - Part 2
 
 * Make a mount point and mount the device  
 ```
@@ -431,7 +433,7 @@ hcpuser@nitrcce:~$ sudo nano /etc/fstab
 ```
 * See <http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-using-volumes.html> for further information about mounting and use EBS volumes.
 
-## Step 18: Shutting down/Restarting your instance
+### Step 18: Shutting down/Restarting your instance
 
 * Go back to your EC2 Management Console in the browser tab where you are logged in to your AWS Console
 * Select the instance/machine you want to shut down
@@ -443,7 +445,7 @@ hcpuser@nitrcce:~$ sudo nano /etc/fstab
 * But you will continue to be charged for EBS disk space.
 * Also note that when you restart a stopped machine, you will get a different public DNS and different IP Address than you previously had.
 
-## Related articles
+### Related articles
 
 [How to Create an EC2 instance for HCP Pipeline Processing](./How%20to%20Create%20an%20EC2%20instance%20for%20HCP%20Pipeline%20Processing.md)
 
@@ -453,7 +455,7 @@ hcpuser@nitrcce:~$ sudo nano /etc/fstab
 
 
 
-# Attachments
+### Attachments
 
 - ![](./assets/vncsession.png)
 - ![](./assets/guacamole.png)
