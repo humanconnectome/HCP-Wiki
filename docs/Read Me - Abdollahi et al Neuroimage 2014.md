@@ -1,3 +1,5 @@
+## Read Me - Abdollahi et al Neuroimage 2014
+
 This README describes a freely available dataset on human retinotopy and myelin maps from Abdollahi et al., (2014, Neuroimage, PMID 24971513; <http://www.sciencedirect.com/science/article/pii/S1053811914005199>). The downloadable archive contains two components:
 
 1. Group-average retinotopic maps and myelin maps intended as reference data for various ongoing analyses (in the Human\_Retinotopy\_Myelin\_ReferenceData/ directory).
