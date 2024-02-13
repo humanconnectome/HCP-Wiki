@@ -1,4 +1,4 @@
-## HCP-YA Subjects with Issues noted in the HCP quality control process
+## HCP-YA Subjects with Identified Quality Control Issues (QC_Issue measure codes explained)
 
 As of the S1200 release, a subject data measure (QC_Issue) has been added to ConnectomeDB to flag HCP Young Adult subjects with notable issues found in the HCP Quality Control process as described for each issue code below.  The issues are notable, but were not considered severe enough to exclude the subject's imaging data from release. We are sharing these findings of issues to alert users and allow them to decide whether to include or exclude these subjects in their own analyses.  
 
