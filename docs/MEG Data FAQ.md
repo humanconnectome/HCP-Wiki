@@ -1,3 +1,5 @@
+## MEG Data FAQ
+
 This page contains useful information for using preprocessed, channel-level, and source-level processed HCP MEG data. If you do not see your question and/or answer here, be sure to check the current HCP Reference Manual and join the [HCP-Users email list](http://humanconnectome.org/contact/#subscribe) (post questions to [hcp-users@humanconnectome.org](mailto:hcp-users@humanconnectome.org)) where HCP MEG experts regularly answer user questions.
 
 ### *1. How is the MEG coregistered to the anatomical MRI and volume conduction model?*
