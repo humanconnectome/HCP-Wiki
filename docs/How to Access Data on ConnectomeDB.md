@@ -1,4 +1,6 @@
-## How to Register an Account and Agree to the HCP Open Access Data Use Terms
+## How to Access Data on ConnectomeDB
+
+### How to Register an Account and Agree to the HCP Open Access Data Use Terms
 
 The first time you visit [**https://db.humanconnectome.org**,](https://db.humanconnectome.org,) you will need to register a new account. You can do this from the login / registration page
 
@@ -27,7 +29,7 @@ Once the terms are accepted, buttons and selectors will appear in that study ove
   
 
 
-## How to Explore HCP Data in ConnectomeDB
+### How to Explore HCP Data in ConnectomeDB
 
 Once your ConnectomeDB account is set up and you have signed the HCP data use agreement, the header for the 1200 Subjects release will appear blue and on the right an “**Open Dataset**” button and two pulldowns for “**Explore Subjects**” and “**Download Image Data**” will be active.
 
@@ -35,7 +37,7 @@ Once your ConnectomeDB account is set up and you have signed the HCP data use ag
 * “**Explore Subjects**” takes you to the ConnectomeDB Subject Dashboard for viewing behavioral and individual difference measures for groups of subjects or exploring the scan level data for  individual subjects. You may choose to browse all subjects or groups of subjects, including all 7T, Retest, or MEG subjects.
 * “**Download Image Data**” takes you straight to the Download Packages page to queue downloads for the group of subjects that you select.
 
-### Creating Custom Groups of Subjects Defined by Search Criteria
+#### Creating Custom Groups of Subjects Defined by Search Criteria
 
 1. **Click on “Explore Subjects”** and select “Subjects with 7T MR Session Data” from the list. The Subject Dashboard will load the 184 subjects for which 7T data are available. In the Subject Information section, all 7T subjects are listed by ID with a scroll bar at the right.
 2. The “Add Tab” pulldown at the far right allows selection of categories of individual/behavioral data for viewing. **Click on “Study Completion”** in the pulldown to open a tab that lists which scan and behavioral data in the HCP protocol were collected for each subject. Use the scroll bar at the bottom to find completeness measures for 7T, starting with 7T\_Full\_MR\_Compl.
@@ -54,7 +56,7 @@ If you click the “Download Images” or “Download CSV” buttons, only the s
 
 You can also explore all the scan details and behavioral/individual difference data for any subject individually by clicking a Subject ID link from the list.
 
-### Accessing Group Average Data and Other Resources
+#### Accessing Group Average Data and Other Resources
 
 Now click the “Dataset Resources” button at the top right. This takes you to the WU-Minn HCP Dataset page (also accessible through the “Open Dataset” button on the Public Connectome Data splash page that you see when you first log in).
 
@@ -71,7 +73,7 @@ Here you see:
 * Link to the Netmats MegaTrawl analysis of correlations between imaging and non-imaging measures in the HCP data
 * Datasets designed for viewing in Connectome Workbench
 
-### Toggling Views of Restricted Access Data
+#### Toggling Views of Restricted Access Data
 
 If you have Restricted data access, you will see at the top left of the page is a pulldown to the right of “Current Project” that allows you to choose the level of data you want to view: Open Access, Restricted (contains fields that are potentially identifying), or Sensitive (contains fields potentially harmful or embarrassing to subjects). This pulldown persists throughout ConnectomeDB and, therefore, can be set from the Dashboard where data fields are viewed as well. More information on Access Levels is available at <http://humanconnectome.org/study/hcp-young-adult/data-use-terms>.
 
@@ -85,13 +87,13 @@ The HCP built this access level setting into the user interface to allow investi
   
 
 
-## How to Download Data
+### How to Download Data
 
 > [!note] 
 > All downloads on ConnectomeDB require the Aspera browser plugin. If this plugin is not installed, ConnectomeDB will provide a link to install the latest version. There is no cost for using the Aspera browser plugin.Installing the Aspera plugin to your browser requires you to restart your browser. Therefore, we recommend installing the plugin before you explore/select HCP data in ConnectomeDB.
 In order to facilitate access to the very large data files generated on every subject, we have prepackaged data into convenient group data packages. Datasets can be downloaded from ConnectomeDB in set packages or users may order all the image data to be sent to them on hard drives.
 
-### Installing the Aspera Browser Plugin
+#### Installing the Aspera Browser Plugin
 
 Due to the large file sizes of the data, the HCP uses an Aspera server to dramatically boost data transfer speeds. Therefore, downloading data from the HCP requires you to have the Aspera plugin installed on your browser.
 
@@ -102,11 +104,11 @@ An Aspera install help guide is available here: [How To Install the Aspera Brows
 > [!note] 
 > One common problem with installing Aspera on the Mac platform for non-US users is that you must add US English to the Languages list (using the checkbox) to your System Preferences>Personal>Language & Text settings.
 
-### First-time Aspera Download Setup
+#### First-time Aspera Download Setup
 
 If this is your first time downloading data from ConnectomeDB, before you start selecting packages to download, we highly recommend setting up the preferences in your Aspera Connect plugin to download to the appropriate place on your local or network hard drive. See [First time Aspera Setup Instructions](First%20time%20Aspera%20Setup%20Instructions.md)
 
-### Selecting Data Packages To Download
+#### Selecting Data Packages To Download
 
 Upon login to ConnectomeDB, you are brought to the Public Connectome Data splash page. If you choose one of the “Download Image Data” options (e.g. 7T Subjects) in the pulldown at the top right of the WU-Minn HCP Data-1200 Subjects section, you will launch the Download Packages page.
 
@@ -136,7 +138,7 @@ If the download does not start automatically, use the link on the Download Packa
 
 Of course, the more subjects and packages you selected for download, the longer your download will take (remember, this is big data!). This is why we offer the “Connectome in a Box” and Amazon S3 options for those who want data on many subjects. 
 
-### Troubleshooting Aspera Downloads
+#### Troubleshooting Aspera Downloads
 
 If you have trouble with getting Aspera downloads to work on your network, please consult these troubleshooting steps: [Aspera Plugin Help and FAQ](Aspera%20Plugin%20Help%20and%20FAQ.md)
 
@@ -146,7 +148,7 @@ If you have trouble with getting Aspera downloads to work on your network, pleas
   
 
 
-## Handling Downloaded HCP Data
+### Handling Downloaded HCP Data
 
 Now that you have downloaded the data you want, here’s some tips for handling the data:
 
