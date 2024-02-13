@@ -1,3 +1,5 @@
+## How to Join HCP-Users or HCP-Announce Google Groups
+
 Anyone interested may join the public **HCP-Users (discussion forum for all things HCP)** or **HCP-Announce (no-reply announcement list)** Google groups hosted at:
 
 **HCP-Users:** <https://groups.google.com/a/humanconnectome.org/d/forum/hcp-users>
@@ -17,7 +19,7 @@ If you have questions, please feel free to email Jenn Elam at elam@wustl.edu
 
 **Table of Contents**
 
-# Creating an account with a non-Gmail email address
+### Creating an account with a non-Gmail email address
 
 Go to: [hcp-users home](https://groups.google.com/a/humanconnectome.org/d/forum/hcp-users) or [hcp-announce home](https://groups.google.com/a/humanconnectome.org/d/forum/hcp-announce)
 
@@ -66,7 +68,7 @@ Google will send a verification code to the provided email. Open the email and c
   
 
 
-# Joining a group
+### Joining a group
 
   
 
@@ -94,7 +96,7 @@ Click on the '**Join group**' button. 
   
 
 
-# Changing membership settings
+### Changing membership settings
 
   
 
