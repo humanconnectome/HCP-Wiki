@@ -1,3 +1,4 @@
+## Aspera Plugin Help and FAQ
 
 Having trouble downloading HCP resources from ConnectomeDB? These previously resolved issues might help you. If not, please feel free to [contact us](http://humanconnectome.org/contact/index.php).
 
