@@ -23,3 +23,15 @@ plugins:
 # exclude:  
 # - .gitignore
 # - CNAME 
+
+# Theme settings:
+site_author: Human Connectome Project
+repo_url: "https://github.com/humanconnectome/HCP-Wiki"
+edit_on_github: true
+github_docs_folder: true
+sticky_navigation: true
+prev_next_buttons_location: bottom
+search_enabled: true
+hljs_style: github-gist
+
+exclude: - docs/
