@@ -1,10 +1,12 @@
+## How to get data from the NDA using command line tools
+
 > [!tip] 
 > This tutorial should take about 1 hour to complete, not including download times.
-## **Purpose**
+### **Purpose**
 
-### Primary Purpose:  Get data from the NDA using (mostly) command line tools.
+#### Primary Purpose:  Get data from the NDA using (mostly) command line tools.
 
-### Secondary Purpose:  Extend your exposure to AWS cloud computing from your desktop machine, whilst gaining exposure to the python virtual environment management tools that will make it possible to translate what you may be used to doing locally to more scalable, reproducible, and meta-analyzable compute infrastructure.  Knowing this stuff will make using that stuff more intuitive.
+#### Secondary Purpose:  Extend your exposure to AWS cloud computing from your desktop machine, whilst gaining exposure to the python virtual environment management tools that will make it possible to translate what you may be used to doing locally to more scalable, reproducible, and meta-analyzable compute infrastructure.  Knowing this stuff will make using that stuff more intuitive.
 
 **Prerequisites:**
 
@@ -19,7 +21,7 @@
 > [!note] 
 > These instructions were tested in a clean ubuntu 20.04 instance 'owned' by an account with pre-loaded computational credits for CCF users at the NDA.  Having a controlled environment, e.g. by way of containers, AMIs, or virtual environments, becomes ever more important as dependencies (think Freesurfer versions, and Juptyer notebook Python library requirements) interfere with one another.  ReproNim Investigators and others have extended the practical reasons for environment control and format standardization in a compelling case that indeed EVERYTHING MATTERS to downstream scientific analysis and meaning construction.  However, there are no reasons in theory this particular tutorial shouldn't work with minimal help from Google in your Ubuntu-esque local machine.
 
-## **Overview of steps**
+### **Overview of steps**
 
 Step 1: Identify the package number you wish to download from the NDA.  If your purpose is to download a subset of data from the NDA (individual files you specify at the command line), then this package should NOT actually contain the image data (e.g. no associated files).  Rather, it will contain metadata about the available image data files.  I.E. where it is located in S3, and how it is organized.  
 
@@ -42,7 +44,7 @@ Step 9:  Turn off AWS machines and/or delete devices,  [if applicable](./How%2
   
 
 
-## **Step 1:**
+### **Step 1:**
 
 Identify the package number you wish to download via information available at <https://nda.nih.gov/user/dashboard/packages.html>, after logging into your NDA account (you have succeeded if the upper right hand corner of page contains your username and the ability to logout).  You are now on the Data Packages tab (red ellipse on right) of your account profile.  Record the number of the package you want to grab from the command line (red ellipse on left).  Note that the number you see in your packages may not be the same as this screenshot from my account, here.  If you have CCF/ABCD data permissions, you will have access to the HCP shared packages below, provide you toggle the drop down menu to 'Shared Data Package' (red arrow).  At this time, you do NOT need to associate these packages to your account by selecting "Add to My Data Packages" from the 'Actions' dropdown.  
 
@@ -51,7 +53,7 @@ Identify the package number you wish to download via information available at <h
   
 
 
-## **Step 2:**
+### **Step 2:**
 
 Find a terminal to a machine with a **Linux/MacOS operating system** that affords you **permission** **to install** software **and** has access to a filesystem location with storage **space for a download**.   
 
@@ -82,7 +84,7 @@ If you were given permission to use a university cluster, you might be instructe
 ```
 
 
-## **Step 3:**
+### **Step 3:**
 
 Confirm that your workspace has the necessary requirements. 
 
@@ -117,7 +119,7 @@ or
 ```
 
 
-## **Step 4:**
+### **Step 4:**
 
 Install the tools.  Follow instructions here:  <https://github.com/NDAR/nda-tools>, or see if you can get away error-free with the three **bolded** command lines below. 
 
@@ -178,7 +180,7 @@ In other words:
   
 
 
-## **Step 5:**
+### **Step 5:**
 
 Refer to the screenshot in Step 1.  **Download package #1185256 using 8 threads** (for comparison, on a t3.2xlarge it took 5.5 hours to download 1300G using 4 threads vs 3.5 hours on 8 threads using the machine I created in the Computational Credits account at the NDA, per [this tutorial](./How%20to%20Create%20an%20Ubuntu%20Instance%20in%20the%20AWS%20account%20that%20the%20NDA%20gives%20you%20when%20you%20request%20access%20to%20computational%20credits.md).  Name the directory for download 'HCPDevImgManifestBeh' so that it matches the name in the NDA, even though you don't have to.  You may be asked to hit 'enter' a couple times if you don't have a token (this method doesn't require a token).  
 
@@ -210,7 +212,7 @@ It usually takes a minute to get rolling, but you should start seeing messages a
 >  cd ..                                # move back to the parent directory
 ```
 
-## **Step 6:**
+### **Step 6:**
 
 Confirm that the downloaded directory is the size you're expecting.  If it is not the right size, confirm that you haven't maxed your download space, and then try again.  If it is still not the right size, contact NDA's helpdesk: [ndahelp@mail.nih.gov](mailto:ndahelp@mail.nih.gov) and include the (likely uninformative) contents of the debug log, along with the exact downloadcmd you used.  
 
@@ -229,7 +231,7 @@ Confirm that the downloaded directory is the size you're expecting.  If it is n
   
 
 
-## **Step 7:**
+### **Step 7:**
 
 **Assuming you have had no issues, and your** **HCPDevImgManifestBeh** folder is the expected size, look at the datastructure\_manifest.txt file.  This file contains the S3 links for associated imaging data files. Note: If you happened to download a package that was created WITH associated imaging files, then this step is irrelevant - you are done. You likely wish to download only a subset of the files listed in the datastructure\_manifest.txt file (if you downloaded all the imaging files for HCD, you would need 20 TB+ of space and many of the files would not be necessary for your analyses). The following command examples will help you create your desired subset of S3 links to pass to the downloadcmd 'round 2' of the downloadcmd process, as described in Step 8.
 
@@ -315,7 +317,7 @@ Confirm that the downloaded directory is the size you're expecting.  If it is n
   
 
 
-## **Step 8:**
+### **Step 8:**
 
 Having identified the subjects and packages you want to download and created a list of S3 links from the manifest, send this list to the downloadcmd for downloading.
 
@@ -400,7 +402,7 @@ For reference, the list of links you created in Step 7 represents two subjects' 
   
 
 
-**# Having identified the subjects and packages you want to download and created a list of S3 links from the manifest, send this list to the downloadcmd for downloading.**
+**Having identified the subjects and packages you want to download and created a list of S3 links from the manifest, send this list to the downloadcmd for downloading.**
 
 ```
 > source ../nda/bin/activate 
@@ -444,7 +446,7 @@ For reference, the list of links you created in Step 7 represents two subjects' 
 
 
 
-# Attachments
+### Attachments
 
 - ![](./assets/image2021-1-21_11-7-30.png)
 - ![](./assets/image2021-1-21_14-48-51.png)
