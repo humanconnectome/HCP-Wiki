@@ -1,4 +1,4 @@
-#7T Movie watching task clip info timing versions shown per individual subject
+# 7T Movie watching task clip info timing versions shown per individual subject
 
 Detailed information on the origins of the clips used in the 4 movie watching scans in the protocol for 7T HCP-Young Adult subjects is available here: [HCP_7T_Movie_Info.csv](./assets/HCP_7T_Movie_Info.csv)
 
