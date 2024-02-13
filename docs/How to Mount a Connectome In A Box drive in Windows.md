@@ -1,8 +1,10 @@
+## How to Mount a Connectome In A Box drive in Windows
+
 As [our note on Connectome In A Box formats](http://humanconnectome.org/data/connectome-in-a-box-format.html) states, we only guarantee full read-write access to Connectome hard drives for users with Linux-based computers (and ideally with enterprise storage to house the data). However, we recognize that some researchers will not have access to this kind of working environment. For those users with Windows PCs, this walkthrough may be helpful.
 
 The most reliable approach is to build a virtual machine (VM) on your PC that runs Linux, then mount the drive inside that VM. 
 
-## Step-by-step guide
+### Step-by-step guide
 
 There are many options available in both virtual machine technology and Linux operating systems. We used the freely available [VirtualBox](https://www.virtualbox.org/) and [Linux Ubuntu 14.10](http://www.ubuntu.com/) for our test. 
 
@@ -20,13 +22,13 @@ There are many options available in both virtual machine technology and Linux op
 
 **4: Start your VM and mount your USB drive.** From this point forward, you should be able to access your data. 
 
-# Alternatives to this approach
+### Alternatives to this approach
 
 If you find that working in a Linux VM does not offer you enough processing performance for your research, consider accessing HCP data via Amazon Public Data. 
 
  
 
-## Related articles
+### Related articles
 
  [How To Connect to Connectome Data via AWS](./How%20To%20Connect%20to%20Connectome%20Data%20via%20AWS.md)
  
@@ -34,6 +36,6 @@ If you find that working in a Linux VM does not offer you enough processing perf
 
 
 
-# Attachments
+### Attachments
 
 - [linux-vm-usb-filter.PNG](./assets/linux-vm-usb-filter.PNG)
