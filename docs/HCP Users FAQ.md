@@ -1,3 +1,5 @@
+## HCP Users FAQ
+
 This page contains answers to frequently asked questions from users of HCP data and HCP tools. If you don't find your question and answer here, look through the full [HCP-Users list archive](http://www.mail-archive.com/hcp-users@humanconnectome.org/) and [HCP-Users Google group history](https://groups.google.com/u/0/a/humanconnectome.org/g/hcp-users), join the [HCP-Users Google group](https://groups.google.com/u/0/a/humanconnectome.org/g/hcp-users) and post questions to [hcp-users@humanconnectome.org](mailto:hcp-users@humanconnectome.org) (from the email you used to join the group).
 
 ### *1. What are \*dtseries.nii, \*.dconn.nii, \*dlabel.nii, \*.dscalar.nii files?*
@@ -299,7 +301,7 @@ The use of spline interpolation will induce a minimal amount of blurring (much l
 
 
 
-# Attachments
+### Attachments
 
 - [ciftisavereset.m](./assets/ciftisavereset.m)
 - [ciftisave.m](./assets/ciftisave.m)
