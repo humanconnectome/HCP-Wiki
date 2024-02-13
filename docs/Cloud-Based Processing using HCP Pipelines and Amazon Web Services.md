@@ -1,7 +1,9 @@
+## Cloud-Based Processing using HCP Pipelines and Amazon Web Services
+
 The goal of this tutorial is for the reader to gain experience with running the HCP pipelines in the "Amazon Cloud".
 
 <a name="TOC"></a>
-## Table of Contents
+### Table of Contents
 Terms and Acronyms
     
     AWS - Amazon Web Services
@@ -89,27 +91,27 @@ Step 16: Using spot instances as worker nodes
 
 Links and references
 
-# Terms and Acronyms
+### Terms and Acronyms
 
 The goal of this tutorial is for the reader to gain experience with running the HCP pipelines in the "Amazon Cloud". In order for this to make sense, it is important that you start out with a basic understanding of the following terms.
 
-## AWS - Amazon Web Services
+**AWS - Amazon Web Services**
 
 A collection of remote computing services that make up a *cloud computing platform.* The two of the central services are *Amazon EC2* (the service that provides compute power, “machines” that are remotely available) and *Amazon S3* (the service that provides storage space for your data).
 
-## EC2 – Elastic Compute Cloud
+**EC2 – Elastic Compute Cloud**
 
 Amazon service that allows users to rent virtual machines (VMs) on which to run their applications. Users can create, launch, and terminate VMs as needed, paying an hourly fee only for VMs that are currently active (this the “elastic” nature).
 
-## S3 – Simple Storage Service
+**S3 – Simple Storage Service**
 
 Amazon online data storage service. Not a traditional file system. Stores large “objects” instead of files. These objects are accessible virtually anywhere on the web. Multiple running EC2 instances can access an S3 object simultaneously. Intended for large, shared pools of data. Conceptually similar to a shared, web-accessible drive. 
 
-## S3 Bucket
+**S3 Bucket**
 
 Data in S3 is stored in *buckets.* Forour purposes, a bucket is simply a named container for the files that we store and share via Amazon S3. HCP's data is made available publicly in a bucket named *hcp-openaccess*.
 
-## AMI – Amazon Machine Image – *The Software*
+**AMI – Amazon Machine Image – *The Software***
 
 A read-only image of a file system that includes an Operating System (OS) and additional software installed. Conceptually, this is comparable to a CD/DVD that contains an OS and other software that is installed on a “machine” for you. The creator of the AMI chooses which OS to include and then installs and configures other software. For example, an AMI creator might choose to start with CentOS Linux or Ubuntu Linux and then pre-install a set of tools that are useful for a particular purpose.
 
@@ -119,7 +121,7 @@ An AMI might be created for Neuroimaging with a chosen OS (e.g. Ubuntu 12.04.1 L
 
 The AMI is the *software distribution* that will be installed and run on your virtual machine *instance* (see below.)
 
-## Amazon EC2 Instance Types – *The* *available hardware*
+**Amazon EC2 Instance Types – *The* *available hardware***
 
 An *EC2 Instance Type* is a particular combination of CPU, memory (RAM), storage, and networking capacity optimized for a particular purpose. There are instance types defined for use as:
 
@@ -131,13 +133,13 @@ An *EC2 Instance Type* is a particular combination of CPU, memory (RAM), storage
 
 An *Instance Type* is a *virtual hardware configuration*.
 
-## Amazon EBS – Elastic Block Storage
+**Amazon EBS – Elastic Block Storage**
 
 Online data storage service that provides a more traditional file system. An EBS volume is attached to a running EC2 instance. From the EC2 instance's point of view, an EBS volume is a “local drive”.
 
 EBS volumes can be configured such that the data continues to exist after the EC2 instance is shut down. By default, however, they are configured such that the volume is deleted upon instance shut down.
 
-## NITRC
+**NITRC**
 
 Neuroimaging Informatics Tools and Resources Clearinghouse
 
@@ -153,7 +155,7 @@ Return to [Table of Contents](#TOC)
 
 ---
 
-# Step 1: Getting Credentials to access HCP S3 Data
+### Step 1: Getting Credentials to access HCP S3 Data
 
 * In order to have access to the HCP data via Amazon S3, you will need to have a ConnectomeDB account and have accepted the Open Access Data Use Terms.
 * In a web browser (e.g Firefox), login to your ConnectomeDB account by visiting [https://db.humanconnectome.org](https://db.humanconnectome.org/) and entering your ConnectomeDB user name and password.
@@ -211,12 +213,12 @@ Return to [Table of Contents](#TOC)
 
 ---
 
-# Step 2: Getting Started with AWS
+### Step 2: Getting Started with AWS
 
 * Before coming to the *Exploring the Human Connectome* course, you should have received an email with instructions for how to setup an Amazon Web Services (AWS) account and setup the account to use the $100 of credit that has been provided by Amazon to students in the course.
 * You will need your AWS account information (login email address and password) to complete the steps of the practical.
 
-## Step 2a: Login to AWS
+#### Step 2a: Login to AWS
 
 * Open a web browser and visit [http](http://console.aws.amazon.com/)[s](http://console.aws.amazon.com/)[://console.aws.amazon.com](http://console.aws.amazon.com/) and login
 * You should see the *A**WS Management Console* page similar to the figure below.
@@ -238,7 +240,7 @@ Return to [Table of Contents](#TOC)
 
 ---
 
-## Step 2b: Create an Instance
+#### Step 2b: Create an Instance
 
 * Once you've successfully logged in to the AWS Management Console, select the EC2- Virtual Servers in the Cloud link in the upper left.
 
@@ -392,7 +394,7 @@ Return to [Table of Contents](#TOC)
 
 ---
 
-## Step 2c: Configure Your Machine Instance
+#### Step 2c: Configure Your Machine Instance
 
 * Select the *Control Panel* button to get to a page that allows you to:
 
@@ -485,7 +487,7 @@ Return to [Table of Contents](#TOC)
 
 ---
 
-## Step 2d: Connect to Your Running Machine Instance
+#### Step 2d: Connect to Your Running Machine Instance
 
 * Select the *Console* tab on the Control Panel Page
 * To connect to the VNC server session within your browser, press the *Connect* button. You will then need to supply your account username and password (e.g. hcpuser and hcppassword).
@@ -525,7 +527,7 @@ Return to [Table of Contents](#TOC)
 
 ---
 
-## Step 2e: Make a Terminal Connection using SSH
+#### Step 2e: Make a Terminal Connection using SSH
 
 * Rather than have a full Desktop GUI, you can simply connect to your running machine instance using a terminal emulator and SSH.
 * Start a terminal emulator on your local machine.
@@ -581,9 +583,9 @@ Return to [Table of Contents](#TOC)
 
 ---
 
-# Step 3: Take Note of the Pre-installed Software
+### Step 3: Take Note of the Pre-installed Software
 
-## Step 3a: Note FSL Installation
+#### Step 3a: Note FSL Installation
 
 * From either the terminal (SSH) connection or from the terminal window on the Desktop GUI inside your browser, enter the following commands to see that FSL has been pre-installed for you on your machine instance.
 
@@ -626,7 +628,7 @@ Return to [Table of Contents](#TOC)
 
 ---
 
-## Step 3b: Note FreeSurfer Installation
+#### Step 3b: Note FreeSurfer Installation
 
 * Enter the following commands:
 
@@ -660,7 +662,7 @@ Return to [Table of Contents](#TOC)
 
 ---
 
-## Step 3c: Note Connectome Workbench Installation
+#### Step 3c: Note Connectome Workbench Installation
 
 * Enter the following commands:
 
@@ -699,7 +701,7 @@ Return to [Table of Contents](#TOC)
 
 ---
 
-## Step 3d: Note the HCP Pipelines Installation
+#### Step 3d: Note the HCP Pipelines Installation
 
 * From either the terminal (SSH) connection or from the terminal window on the Desktop GUI inside your browser, enter the following commands:
 
@@ -727,7 +729,7 @@ Return to [Table of Contents](#TOC)
 
 ---
 
-## Step 3e: Note All Available Pre-installed Software
+#### Step 3e: Note All Available Pre-installed Software
 
 * For a full list of what's installed visit:<http://www.nitrc.org/plugins/mwiki/index.php/nitrc:User_Guide_-_NITRC-CE_Installed_Packages>
 
@@ -744,7 +746,7 @@ Return to [Table of Contents](#TOC)
 
 ---
 
-# Step 4: Take Note of Available HCP data
+### Step 4: Take Note of Available HCP data
 
 * From either the terminal (SSH) connection or from the terminal window on the Desktop GUI inside your browser, enter the following commands:
 
@@ -771,7 +773,7 @@ Return to [Table of Contents](#TOC)
 
 ---
 
-# Step 5: Create directory structure on which HCP Pipelines can be run
+### Step 5: Create directory structure on which HCP Pipelines can be run
 
 * There is a utility that we have made available that should help in creating a directory on your local EBS disk that contains links to data in the read-only **/s3/hcp** directory. Use the following commands to get and install the utility.
 
@@ -815,7 +817,7 @@ Return to [Table of Contents](#TOC)
 
 ---
 
-# Step 6: Editing files to run a pipeline stage
+### Step 6: Editing files to run a pipeline stage
 
 This step should be familiar to you as it is very similar to the modifications you made to the **PreFreeSurferPipelineBatch.sh** script and the **SetUpHCPPipeline.sh** script in a previous practical. The point is to make similar modifications to adapt these scripts to the configuration of your running EC2 instance.
 
@@ -885,7 +887,7 @@ Return to [Table of Contents](#TOC)
 
 ---
 
-# Step 7: Starting up a set of PreFreeSurfer Pipeline jobs
+### Step 7: Starting up a set of PreFreeSurfer Pipeline jobs
 
 Again, this step should be familiar as it is essentially the same as the test run you did of the **PreFreeSurferPiplineBatch.mine.sh** script in a previous practical.
 
@@ -961,9 +963,9 @@ Return to [Table of Contents](#TOC)
 
 ---
 
-# Step 8: Shutdown and Restart of an instance
+### Step 8: Shutdown and Restart of an instance
 
-## Step 8a: Shutdown of a running machine instance
+#### Step 8a: Shutdown of a running machine instance
 
 * Log out of any running terminal connections and close any web browser tabs showing VNC connections to your running instance. If using SSH through a terminal, you may have to press **Ctrl-C** after using the **exit** command to return the terminal to your local machine.
 * Then visit your control panel at **http://*****<your public dns>*** and press the *Logout* button (you may still have such a tab active in your browser.)
@@ -998,7 +1000,7 @@ Return to [Table of Contents](#TOC)
 
 ---
 
-## Step 8b: Restart of a machine instance
+#### Step 8b: Restart of a machine instance
 
 * Visit your Amazon EC2 Dashboard at <https://console.aws.amazon.com/ec2>
 * Click on *Instances* (not *INSTANCES*) on the left side of the page
@@ -1021,7 +1023,7 @@ Return to [Table of Contents](#TOC)
 
 ---
 
-## Important Notes about Stopping and Restarting machine instances:
+### Important Notes about Stopping and Restarting machine instances:
 
 It is important to stop your machine instance when it is not in use. Amazon charges you for the instance while it is active/running (whether you are actually using it or not). You are not charged for the instance during the time that it is stopped. You are still charged a monthly rental fee for provisioned EBS storage.
 
@@ -1070,7 +1072,7 @@ Return to [Table of Contents](#TOC)
 
 For the *Exploring the Human Connectome Course* (Summer 2015), the following steps are optional.
 
-#  Step 9: Installing StarCluster
+###  Step 9: Installing StarCluster
 
 At this point you have created an example Amazon EC2 instance that you can use to run HCP Pipelines. It does not have adequate disk space to store the output from many pipeline runs, so this is just an example. You would need to create an instance with significantly more disk space, EBS volume space, to actually run HCP Pipelines.
 
@@ -1118,7 +1120,7 @@ Return to [Table of Contents](#TOC)
 
 ---
 
-# Step 10: Create an AWS Access Key Pair
+### Step 10: Create an AWS Access Key Pair
 
 In order to configure and use StarCluster, you will need an AWS Access Key ID and AWS Secret Access Key for your AWS account. These are a ***different*** AWS Access Key Pair than you created for accessing the HCP S3 data. That previous access key pair are associated with your HCP ConnectomeDB account. The pair that you create as part of this step are for access to your Amazon AWS account. The StarCluster software will need to access your AWS account.
 
@@ -1145,9 +1147,9 @@ Return to [Table of Contents](#TOC)
 
  
 
-# Step 11: Setup a cluster for running HCP Pipelines
+### Step 11: Setup a cluster for running HCP Pipelines
 
-## Step 11a: Supply StarCluster with your AWS credentials
+#### Step 11a: Supply StarCluster with your AWS credentials
 
 Next, you will need to begin the process of creating and editing a StarCluster configuration file.
 
@@ -1223,7 +1225,7 @@ Return to [Table of Contents](#TOC)
 
 ---
 
-## Step 11b: Creating an Amazon EC2 key pair
+#### Step 11b: Creating an Amazon EC2 key pair
 
 StarCluster will be creating and configuring a number of machine instances for you. To do this, in addition to needing access to your account, StarCluster will also need an EC2 key pair to use to connect to and configure EC2 instances on your behalf. Therefore, you must create at least one EC2 key pair to supply to StarCluster via its configuration file.
 
@@ -1273,7 +1275,7 @@ Return to [Table of Contents](#TOC)
 
 ---
 
-## Step 11c: Start an example cluster
+#### Step 11c: Start an example cluster
 
 * Next, we'll start an example cluster just to verify that everything is setup correctly. The cluster we start now will not be one on which we can actually run pipelines, we've got further configuration work to do before we get to that point.
 * Start an example cluster by issuing commands like the following. Note that in using the following commands, you are starting a cluster and giving it the cluster name: **mysmallcluster**. You are allowing StarCluster to use the default cluster template (which defines the machines that you would like to be in your cluster). Your default cluster template is also set in your StarCluster config file, and should already be set to **smallcluster**.
@@ -1334,7 +1336,7 @@ Return to [Table of Contents](#TOC)
 
 ---
 
-## Step 11d: Navigate your example cluster
+#### Step 11d: Navigate your example cluster
 
 * After starting your cluster, visit your EC2 console at <https://console.aws.amazon.com/ec2> and view your instance table by selecting the *Instances* link on the left hand side. You may have to refresh your instance table by clicking on the  ![](./assets/26a.RefreshButton.png)  icon in the upper right.
 * You should see the instance that you created previously, installed StarCluster software on, and used to create a cluster. If you failed to give that instance the name MyHCP\_NITRC before, now is a good time to give it a name to help distinguish it from other instances. Point your cursor at the Name field for the instance and then click on the pencil icon that appears in the field. You can then fill in the field with a name for your instance (e.g. **MyHCP\_NITRC**) and select the check mark to confirm the change.
@@ -1345,7 +1347,7 @@ Important:
 1. Instances which are StarCluster cluster nodes, such as the instances named **master** and **node001**, should be left under the control of StarCluster. You should not start, stop, terminate, or reboot such nodes using the Actions button at the top of your instance table. Doing so can potentially make your cluster unusable.
 2. For example, if you want to stop the nodes **master** and **node001** in the cluster you've just created (named **mysmallcluster**), you should do so by logging on to your **MyHCP\_NITRC** instance and issuing the appropriate StarCluster command as shown in the example StarCluster Commands below (e.g. **$ starcluster stop mysmallcluster**).
 
-### Example StarCluster Commands
+#### Example StarCluster Commands
 
 Now is a good time to become familiar with some basic StarCluster commands. You will issue such StarCluster commands on a terminal connected your HCP\_NITRC instance. In the below examples, text enclosed in angle brackets, < >, should be replaced by names that you provide.
 
@@ -1463,7 +1465,7 @@ Return to [Table of Contents](#TOC)
 
 ---
 
-## Step 11e: Terminate your small cluster
+#### Step 11e: Terminate your small cluster
 
 * The machine instances that are part of the cluster you have started are not based upon the HCP\_NITRC AMI or upon the machine instance that you have configured to access the S3 HCP open access data. So neither the master nor the worker nodes can run HCP pipelines.
 * Terminate the cluster so that you can move on to configuring a cluster with nodes that can run the HCP Pipelines.
@@ -1496,7 +1498,7 @@ Return to [Table of Contents](#TOC)
 
 ---
 
-## Step 11f: Create an instance to use as a model for your pipeline cluster nodes
+#### Step 11f: Create an instance to use as a model for your pipeline cluster nodes
 
 We now need to create an Amazon EC2 instance that will be used as a “template” for creating the nodes in a cluster that can run HCP pipelines. We'll start by creating another instance that is based on the HCP\_NITRC AMI.
 
@@ -1564,7 +1566,7 @@ Return to [Table of Contents](#TOC)
 
 ---
 
-## Step 11g: Further prepare your new instance for StarCluster use
+#### Step 11g: Further prepare your new instance for StarCluster use
 
 * In a new tab in your browser,
 
@@ -1595,7 +1597,7 @@ tsc5yc@mst.edu
 * After you *Submit* the license change, press the *C**onnect* button to connect to your newly running **PipelineNodeTemplate** instance using Guacamole. Enter your username (e.g. **hcpuser**) and password (e.g. **hcppassword**) when prompted, and then click on the *NITRC\_CE Desktop* link.
 * In the terminal window now in your browser, enter the following sets of commands.
 
-### Turn off the software firewall on your PipelineNodeTemplate instance
+##### Turn off the software firewall on your PipelineNodeTemplate instance
 
 * Use the following commands in the terminal window inside the Guacamole-based GUI connected to your PipelineNodeTemplate instance. *(The Amazon Security Groups that you configure for each instance are the virtual firewall for your EC2 instances. Having the additional software firewall included with Ubuntu enabled just adds a layer of confusion when trying to configure your instance and sometimes prevents StarCluster from sharing data across nodes.)*
 
@@ -1606,7 +1608,7 @@ Firewall stopped and disabled on system startup
 $
 ```
 
-### Delete gridengine software from your PipelineNodeTemplate instance
+##### Delete gridengine software from your PipelineNodeTemplate instance
 
 * *StarCluster expects the gridengine software to be installed in a particular location and fails to create a cluster node if the software is installed differently. We'll fix this up in the next sub-step.*
 
@@ -1616,7 +1618,7 @@ Enter your password (e.g. hcppassword) if/when prompted
 Enter Y when asked if you want to continue
 ```
 
-### Delete the sgeadmin account and group.
+##### Delete the sgeadmin account and group.
 
 Important:
 
@@ -1631,7 +1633,7 @@ $ sudo delgroup sgeadmin
 
 * Do not worry if the system's response to the **delgroup** command is, “The group `sgeadmin' does not exist.”
 
-### Remove the SGE\_ROOT setting in the /etc/profile file
+##### Remove the SGE\_ROOT setting in the /etc/profile file
 
 * Use the following command:
 
@@ -1652,7 +1654,7 @@ Return to [Table of Contents](#TOC)
 
 ---
 
-## Step 11h: Install SGE files
+#### Step 11h: Install SGE files
 
 We need to create another running instance. This instance needs to be based on an officially released StarCluster AMI. We'll need to copy some files from that running instance to our PipelineNodeTemplate instance.
 
@@ -1670,7 +1672,7 @@ Important:
 1. In the following commands: <new-instance-DNS> = the Public DNS for the instance you just created (the t1.micro instance)
 2. In the following commands: <PipelineNodeTemplate-DNS> = the Public DNS for your PipelineNodeTemplate instance
 
-### Create a compressed tar file containing what StarCluster needs
+##### Create a compressed tar file containing what StarCluster needs
 
 ```
 $ ssh -i ~/.ssh/PipelineNodeTemplate.pem root@<new-instance-DNS>
@@ -1680,14 +1682,14 @@ $ ssh -i ~/.ssh/PipelineNodeTemplate.pem root@<new-instance-DNS>
 # exit
 ```
 
-### Copy the compressed tar file you just made to your local machine
+##### Copy the compressed tar file you just made to your local machine
 
 ```
 $ scp -i ~/.ssh/PipelineNodeTemplate.pem root@<new-instance-DNS>:/opt_starcluster.tar.gz ./
 ...(see scp output showing percent copied and ETA until done, etc.)...
 ```
 
-### Copy the compressed tar file from your local machine to your PipelineNodeTemplate instance
+##### Copy the compressed tar file from your local machine to your PipelineNodeTemplate instance
 
 Important:
 
@@ -1699,7 +1701,7 @@ $ scp -i ~/.ssh/PipelineNodeTemplate.pem opt_starcluster.tar.gz root@<PipelineNo
 ...(see scp output showing percent copied and ETA until done, etc.)...
 ```
 
-### Unpack the compressed tar file and copy its contents to where StarCluster expects it
+##### Unpack the compressed tar file and copy its contents to where StarCluster expects it
 
 ```
 $ ssh -i ~/.ssh/PipelineNodeTemplate.pem root@<PipelineNodeTemplate-DNS>
@@ -1709,7 +1711,7 @@ $ ssh -i ~/.ssh/PipelineNodeTemplate.pem root@<PipelineNodeTemplate-DNS>
 # exit
 ```
 
-### Terminate the instance you just created based on the StarCluster AMI
+##### Terminate the instance you just created based on the StarCluster AMI
 
 Important:
 
@@ -1730,7 +1732,7 @@ Return to [Table of Contents](#TOC)
 
 ---
 
-## Step 11i: Create an EBS volume to hold data to be shared across your cluster
+#### Step 11i: Create an EBS volume to hold data to be shared across your cluster
 
 You now need an EBS volume (think of it as a simple Hard Disk Drive) that will contain your data for processing. It would be best if this volume is independent of any particular EC2 instance (machine) whether that instance is part of a cluster or not. That way, if you terminate the instances, your data will persist. We'll create such a volume, and then setup StarCluster so that the created volume gets mounted to all the nodes in the cluster that we create for running pipelines.
 
@@ -1793,7 +1795,7 @@ Return to [Table of Contents](#TOC)
 
 ---
 
-## Step 11j: Create an AMI for cluster nodes
+#### Step 11j: Create an AMI for cluster nodes
 
 * Visit your Amazon instance table and get the instance id of the **PipelineNodeTemplate** instance you've created.
 
@@ -1835,7 +1837,7 @@ Return to [Table of Contents](#TOC)
 
 ---
 
-## Step 11k: Configure and Start a Pipeline Cluster
+#### Step 11k: Configure and Start a Pipeline Cluster
 
 Next we'll modify the StarCluster configuration file to create a template for a cluster that is appropriate for running HCP Pipelines. It will use the AMI that we just created as the starting point image (e.g. **ami-feb7aa96** above, but yours will be different) for both the master and the worker nodes.
 
@@ -1909,11 +1911,11 @@ Return to [Table of Contents](#TOC)
 
 ---
 
-# Step 12: Getting the HCP OpenAccess data available to your cluster
+### Step 12: Getting the HCP OpenAccess data available to your cluster
 
 You now have a running cluster that has the necessary software installed for running the HCP Pipelines. However, none of the nodes in the cluster (master or workers) have direct access to the HCP OpenAccess S3 data. For this exercise, we will see how to easily copy the data you would like to use for pipeline processing from the HCP OpenAccess S3 bucket to the /mydata directory that is shared between your cluster nodes.
 
-## Step 12a: Setting up s3cmd on your master node
+#### Step 12a: Setting up s3cmd on your master node
 
 S3cmd (<http://s3tools.org/s3cmd>) is a free command line tool for uploading, retrieving and managing data in an Amazon S3 bucket. S3cmd is pre-installed in the HCP\_NITRC AMI. Therefore, it is available to use on your cluster nodes. In particular for our use now, it is available for use on the master node of your cluster.
 
@@ -2033,7 +2035,7 @@ Return to [Table of Contents](#TOC)
 
 ---
 
-## Step 12b: Retrieving data to process from the HCP OpenAccess S3 Bucket
+#### Step 12b: Retrieving data to process from the HCP OpenAccess S3 Bucket
 
 * Just as there was a utility available to help create a link structure (see Step 5), there is a utility available to help retrieve copies of data from the HCP OpenAccess S3 bucket using **s3cmd**.
 * While logged in to the master node of your cluster, enter the following commands to get data for a couple subjects
@@ -2068,7 +2070,7 @@ Return to [Table of Contents](#TOC)
 
 ---
 
-# Step 13: Editing files to run a pipeline stage
+### Step 13: Editing files to run a pipeline stage
 
 Once again, this step should be familiar as you are editing the **PreFreeSurferPipelineBatch.sh** script and the **SetUpHCPPipeline.sh** script to match your cluster configuration.
 
@@ -2188,7 +2190,7 @@ Return to [Table of Contents](#TOC)
 
 ---
 
-# Step 14: Starting up a set of PreFreeSurfer Pipeline jobs
+### Step 14: Starting up a set of PreFreeSurfer Pipeline jobs
 
 * From the master node of your cluster, issue the following commands
 
@@ -2255,7 +2257,7 @@ Return to [Table of Contents](#TOC)
 
 ---
 
-# Step 15: Using the StarCluster load balancer
+### Step 15: Using the StarCluster load balancer
 
 As you might imagine there can be disadvantages to keeping worker nodes of your cluster running even when they are not being used. In our example so far, we have created a cluster that contains one master node and 4 worker nodes, but we only have 2 jobs running. So at most we really need only 2 nodes right now. 
 
@@ -2315,7 +2317,7 @@ Return to [Table of Contents](#TOC)
 
 ---
 
-# Step 16: Using spot instances as worker nodes
+### Step 16: Using spot instances as worker nodes
 
 To lower costs even further, we can take advantage of the spot instance mechanism of Amazon AWS. The spot instance mechanism is a way for you to bid on Amazon EC2 instances such that instances are run only when your bid exceeds the current *Spot Price* for the instance type that you want to use. 
 
@@ -2389,7 +2391,7 @@ Return to [Table of Contents](#TOC)
 
 ---
 
-# Links and references
+### Links and references
 
 Browse Amazon S3 buckets with Ubuntu Linux: <http://makandracards.com/makandra/31999-browse-amzon-s3-buckets-with-ubuntu-linux>
 
@@ -2423,7 +2425,7 @@ ec2-52-4-211-53.compute-1.amazonaws.com
 
 
 
-# Attachments
+#### Attachments
 
 - ![](./assets/30.PipelineNodeTemplateInstanceID.png)
 - ![](./assets/29.ConfiguringYourHcpNitrcInstance.png)
