@@ -1,8 +1,10 @@
+## LONI to XNAT - API Reference
+
 Overview and examples of the XNAT REST API to aid in getting MR session data from LONI sites. 
 
 The {SERVER-URL} for production will be <https://intradb.humanconnectome.org>, and an example of {SERVER-URL} for testing purposes will likely be <https://hcpi-demo.humanconnectome.org.> You will need to have an account on the site you are pushing data to and will also require project owner access. Please contact Michael Hileman (mhileman@wustl.edu) for any help regarding site setup and access.
 
-## DICOM send example
+### DICOM send example
 
 You can use the REST interface to push a zip archive of DICOMs, e.g., 
 
@@ -23,11 +25,11 @@ DicomRemap -o SERVER-URL /path/to/dicom
 Either of the above methods will create a subject and experiment from the DICOM headers during the XNAT archive process.
 
 
-## Setting XNAT Parameters via REST
+### Setting XNAT Parameters via REST
 
 Sessions will be built and parameters set from the DICOM headers in the above examples. However, it is likely that you will need to change some things that either weren't in the DICOM headers or not where XNAT expected them to be. To make any of these REST calls below, the subject or experiment that you are setting paramaters for must exist. For testing purposes, you can create these through the top menu in XNAT for any project that you have appropriate access for.
 
-#### Subject Level Param
+##### Subject Level Param
 
 Setting gender and age:
 
@@ -38,7 +40,7 @@ curl -u user:pass https://{SERVER-URL}/REST/projects/CCF_TEST/subjects/sub1?xsiT
 
  
 
-#### Experiment Level Param
+##### Experiment Level Param
 
 Setting the scanner name:
 
@@ -48,7 +50,7 @@ curl -u user:pass https://{SERVER-URL}/REST/projects/CCF_TEST/subjects/sub1/expe
 
  
 
-#### Scan Level Param
+##### Scan Level Param
 
 Setting scan type and series description:
 
