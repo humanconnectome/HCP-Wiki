@@ -1,12 +1,14 @@
-## ***Updated S1200 HCP Young Adult (HCP-YA) Data Dictionary spreadsheet******:***
+## HCP-YA Data Dictionary- Updated for the 1200 Subject Release
 
-## **Excel version:** [HCP_S1200_DataDictionary_Oct_30_2023.xlsx](./assets/HCP_S1200_DataDictionary_Oct_30_2023.xlsx)
+### ***Updated S1200 HCP Young Adult (HCP-YA) Data Dictionary spreadsheet******:***
 
-## **CSV version:** [HCP_S1200_DataDictionary_Oct_30_2023.csv](./assets/HCP_S1200_DataDictionary_Oct_30_2023.csv)
+### **Excel version:** [HCP_S1200_DataDictionary_Oct_30_2023.xlsx](./assets/HCP_S1200_DataDictionary_Oct_30_2023.xlsx)
 
-## *Up to date variable descriptions are also viewable within the ConnectomeDB subject dashboard by mousing over the column name or selecting "Data Dictionary" from the column name dropdown.*
+### **CSV version:** [HCP_S1200_DataDictionary_Oct_30_2023.csv](./assets/HCP_S1200_DataDictionary_Oct_30_2023.csv)
 
-## ***Note: Much of the information below is out of date or incomplete-- please download the spreadsheet at the link above for current variable descriptions.***
+### *Up to date variable descriptions are also viewable within the ConnectomeDB subject dashboard by mousing over the column name or selecting "Data Dictionary" from the column name dropdown.*
+
+### ***Note: Much of the information below is out of date or incomplete-- please download the spreadsheet at the link above for current variable descriptions.***
 
 Dashboard filtering starts at the Category level, and each category is represented by a separate data table in the ConnectomeDB interface. Multiple data tables are arranged in a tabbed format. 
 
@@ -14,9 +16,9 @@ Each "Instrument" contains multiple "Attributes" - these attributes correspond t
 
 **All Categories and Instruments**
 
-# Category: Subject Information
+### Category: Subject Information
 
-### Instrument: Demographics
+#### Instrument: Demographics
 
 
 
@@ -73,9 +75,9 @@ Each "Instrument" contains multiple "Attributes" - these attributes correspond t
 | Relationship Status | SSAGA\_Rlshp | **Tier 1 Restricted** |  |  |  | Is respondent married or in live-in relationship? no = 0; yes = 1 |
 | Missouri Born | SSAGA\_MOBorn | **Tier 1 Restricted** |  |  |  | Is respondent Missouri born? no = 0; yes = 1 |
 
-# Category: Study Completion
+### Category: Study Completion
 
-### Instrument: Study Completion: 3T MR
+#### Instrument: Study Completion: 3T MR
 
 
 
@@ -115,7 +117,7 @@ Each "Instrument" contains multiple "Attributes" - these attributes correspond t
 * False
  | =   | Full diffusion MRI protocol was collected |
 
-### Instrument: Image Reconstruction Info: 3T MR
+#### Instrument: Image Reconstruction Info: 3T MR
 
 
 
@@ -124,7 +126,7 @@ Each "Instrument" contains multiple "Attributes" - these attributes correspond t
 | 3T MR dMRI Recon Version | dMRI\_3T\_ReconVrs | Open |  |  |  |  |
 | 3T MR fMRI Recon Version | fMRI\_3T\_ReconVrs | Open |  |  |  |  |
 
-### Instrument: Study Completion - MEG
+#### Instrument: Study Completion - MEG
 
 
 
@@ -147,7 +149,7 @@ Each "Instrument" contains multiple "Attributes" - these attributes correspond t
 | Motor Data Available | MEG\_Motor\_Avail | Open |  | True False | = |  |
 | Motor Data Complete | MEG\_Motor\_Compl | Open |  | True False | = |  |
 
-### Instrument: Study Completion - Behavioral
+#### Instrument: Study Completion - Behavioral
 
 
 
@@ -223,9 +225,9 @@ Each "Instrument" contains multiple "Attributes" - these attributes correspond t
 * False
  | = |  |
 
-# Category: MR Sessions
+### Category: MR Sessions
 
-### Instrument: Session Information
+#### Instrument: Session Information
 
 
 
@@ -235,9 +237,9 @@ Each "Instrument" contains multiple "Attributes" - these attributes correspond t
 | MR Session Scanner | MRsession\_Scanner | Open |  ^[A-z0-9\_,|]+$ | =, NOT =, CONTAINS, DOESN'T CONTAIN, IS EMPTY, IS NOT EMPTY |  |
 | MR Session Scans | MRsession\_Scans | Open |  ^[A-z0-9\_,|()]+$ | =, NOT =, CONTAINS, DOESN'T CONTAIN, IS EMPTY, IS NOT EMPTY |  |
 
-# Category: Health and Family History
+### Category: Health and Family History
 
-### Instrument: Physical Health
+#### Instrument: Physical Health
 
 
 
@@ -272,7 +274,7 @@ Each "Instrument" contains multiple "Attributes" - these attributes correspond t
 | Menstrual - Using birth control pills, progesterone, or fertility drugs | Manstrual\_UsingBirthControl | **Tier 1 Restricted** |  | = | Is participant using birth control pills, progesterone, or fertility drugs? Yes = 1, No = 0 (Asked of female participants only) |
 | Menstrual - Birth control/Fertility drug code | Menstrual\_BirthControlCode | **Tier 1 Restricted** | ^[0-9]+$ | =,NOT =,<,> | What birth control, progesterone, or fertility drugs is the participant using? 1=OC's for contraception, 2=OC's primarily for menstrual regulation, 3=estradiol for menstrual regulation, 4=progesterone for menstrual regulation, 5=fertility therapy, 6=other, 7=unknown  (Asked of female participants only) |
 
-### Instrument: Family History of Psychiatric and Neurologic Disorders
+#### Instrument: Family History of Psychiatric and Neurologic Disorders
 
 
 
@@ -297,9 +299,9 @@ Each "Instrument" contains multiple "Attributes" - these attributes correspond t
 | None of the above - Mother | FamHist\_Moth\_None | **Tier 2 Restricted** |  | = |  |
 | None of the above - Father | FamHist\_Fath\_None | **Tier 2 Restricted** |  | = |  |
 
-# Category: Alertness
+### Category: Alertness
 
-### Instrument: Cognitive Status (Mini Mental Status Exam)
+#### Instrument: Cognitive Status (Mini Mental Status Exam)
 
 
 
@@ -307,7 +309,7 @@ Each "Instrument" contains multiple "Attributes" - these attributes correspond t
 | --- | --- | --- | --- | --- | --- |
 | Mini Mental Status Exam Total Score | MMSE\_Score | Open | ^[0-9]+$ | =,NOT =,<,> |  |
 
-### Excluded Fields: Cognitive Status (Mini Mental Status Exam)
+#### Excluded Fields: Cognitive Status (Mini Mental Status Exam)
 
 
 
@@ -350,7 +352,7 @@ Each "Instrument" contains multiple "Attributes" - these attributes correspond t
 | V. Language - Writing - Writes sentence | MMSE\_Lang\_Writing | Open | ^[0-9]+$ | =,NOT =,<,> |  |
 | V. Language - Copying - Copies pentagons | MMSE\_Lang\_Copying | Open | ^[0-9]+$ | =,NOT =,<,> |  |
 
-### Instrument: Sleep (Pittsburgh Sleep Questionnaire)
+#### Instrument: Sleep (Pittsburgh Sleep Questionnaire)
 
 
 
@@ -358,7 +360,7 @@ Each "Instrument" contains multiple "Attributes" - these attributes correspond t
 | --- | --- | --- | --- | --- | --- |
 | Sleep (Pittsburgh Sleep Questionnaire) Total Score | PSQI\_Score | Open | ^[0-9]+$ | =,NOT =,<,> | The total score across all items on the Pittsburgh Sleep Questionnaire |
 
-### Excluded Instrument Fields: Sleep (Pittsburgh Sleep Questionnaire)
+#### Excluded Instrument Fields: Sleep (Pittsburgh Sleep Questionnaire)
 
 
 
@@ -385,9 +387,9 @@ Each "Instrument" contains multiple "Attributes" - these attributes correspond t
 | 9. How often trouble keeping up enthusiasm | PSQI\_Keeping\_Enthusiasm | Open | ^[0-9]+$ | =,NOT =,<,> |  |
 | 10. Have bed partner or roommate | PSQI\_Sleep\_Partner | Open | ^[0-9]+$ | =,NOT =,<,> |  |
 
-# Category: Cognition
+### Category: Cognition
 
-### Instrument: Episodic Memory (Picture Sequence Memory)
+#### Instrument: Episodic Memory (Picture Sequence Memory)
 
 **Instrument Description:**
 
@@ -403,7 +405,7 @@ Each "Instrument" contains multiple "Attributes" - these attributes correspond t
 | NIH Toolbox Picture Sequence Memory Test: Unadjusted Scale Score | PicSeq\_Unadj | Open | ^[-+]?[0-9]\*[.]?[0-9]+$ | =,NOT =,<,> | The Picture Sequence Memory Test is a measure developed for the assessment of episodic memory for ages 3-85 years. It involves recalling increasingly lengthy series of illustrated objects and activities that are presented in a particular order on the computer screen. The participants are asked to recall the sequence of pictures that is demonstrated over two learning trials; sequence length varies from 6-18 pictures, depending on age. Participants are given credit for each adjacent pair of pictures (i.e., if pictures in locations 7 and 8 and placed in that order and adjacent to each other anywhere – such as slots 1 and 2 – one point is awarded) they correctly place, up to the maximum value for the sequence, which is one less than the sequence length (if there are 18 pictures in the sequence, the maximum score is 17, because that is the number of adjacent pairs of pictures that exist). The test takes approximately 7 minutes to administer. This test is recommended for ages 3-85. |
 | NIH Toolbox Picture Sequence Memory Test: Age-Adjusted Scale Score | PicSeq\_AgeAdj | Open | ^[-+]?[0-9]\*[.]?[0-9]+$ | =,NOT =,<,> | The Picture Sequence Memory Test is a measure developed for the assessment of episodic memory for ages 3-85 years. It involves recalling increasingly lengthy series of illustrated objects and activities that are presented in a particular order on the computer screen. The participants are asked to recall the sequence of pictures that is demonstrated over two learning trials; sequence length varies from 6-18 pictures, depending on age. Participants are given credit for each adjacent pair of pictures (i.e., if pictures in locations 7 and 8 and placed in that order and adjacent to each other anywhere – such as slots 1 and 2 – one point is awarded) they correctly place, up to the maximum value for the sequence, which is one less than the sequence length (if there are 18 pictures in the sequence, the maximum score is 17, because that is the number of adjacent pairs of pictures that exist). The test takes approximately 7 minutes to administer. This test is recommended for ages 3-85. |
 
-### Instrument: Executive Function/Cognitive Flexibility (Dimensional Change Card Sort)
+#### Instrument: Executive Function/Cognitive Flexibility (Dimensional Change Card Sort)
 
 **Instrument Description:**
 
@@ -419,7 +421,7 @@ Each "Instrument" contains multiple "Attributes" - these attributes correspond t
 | NIH Toolbox Dimensional Change Card Sort Test: Unadjusted Scale Score | CardSort\_Unadj | Open | ^[-+]?[0-9]\*[.]?[0-9]+$ | =,NOT =,<,> | DCCS is a measure of cognitive flexibility. Two target pictures are presented that vary along two dimensions (e.g., shape and color). Participants are asked to match a series of bivalent test pictures (e.g., yellow balls and blue trucks) to the target pictures, first according to one dimension (e.g., color) and then, after a number of trials, according to the other dimension (e.g., shape). “Switch” trials are also employed, in which the participant must change the dimension being matched. For example, after 4 straight trials matching on shape, the participant may be asked to match on color on the next trial and then go back to shape, thus requiring the cognitive flexibility to quickly choose the correct stimulus. Scoring is based on a combination of accuracy and reaction time, and the test takes approximately 4 minutes to administer. This test is recommended for ages 3-85. |
 | NIH Toolbox Dimensional Change Card Sort Test: Age-Adjusted Scale Score | CardSort\_AgeAdj | Open | ^[-+]?[0-9]\*[.]?[0-9]+$ | =,NOT =,<,> | DCCS is a measure of cognitive flexibility. Two target pictures are presented that vary along two dimensions (e.g., shape and color). Participants are asked to match a series of bivalent test pictures (e.g., yellow balls and blue trucks) to the target pictures, first according to one dimension (e.g., color) and then, after a number of trials, according to the other dimension (e.g., shape). “Switch” trials are also employed, in which the participant must change the dimension being matched. For example, after 4 straight trials matching on shape, the participant may be asked to match on color on the next trial and then go back to shape, thus requiring the cognitive flexibility to quickly choose the correct stimulus. Scoring is based on a combination of accuracy and reaction time, and the test takes approximately 4 minutes to administer. This test is recommended for ages 3-85. |
 
-### Instrument: Executive Function/Inhibition (Flanker Task)
+#### Instrument: Executive Function/Inhibition (Flanker Task)
 
 **Instrument Description:**
 
@@ -435,7 +437,7 @@ Each "Instrument" contains multiple "Attributes" - these attributes correspond t
 | NIH Toolbox Flanker Inhibitory Control and Attention Test: Unadjusted Scale Score | Flanker\_Unadj | Open | ^[-+]?[0-9]\*[.]?[0-9]+$ | =,NOT =,<,> | The Flanker task measures both a participant’s attention and inhibitory control. The test requires the participant to focus on a given stimulus while inhibiting attention to stimuli (fish for ages 3-7 or arrows for ages 8-85) flanking it. Sometimes the middle stimulus is pointing in the same direction as the “flankers” (congruent) and sometimes in the opposite direction (incongruent). Scoring is based on a combination of accuracy and reaction time, and the test takes approximately 3 minutes to administer. This test is recommended for ages 3-85. |
 | NIH Toolbox Flanker Inhibitory Control and Attention Test: Age-Adjusted Scale Score | Flanker\_AgeAdj | Open | ^[-+]?[0-9]\*[.]?[0-9]+$ | =,NOT =,<,> | The Flanker task measures both a participant’s attention and inhibitory control. The test requires the participant to focus on a given stimulus while inhibiting attention to stimuli (fish for ages 3-7 or arrows for ages 8-85) flanking it. Sometimes the middle stimulus is pointing in the same direction as the “flankers” (congruent) and sometimes in the opposite direction (incongruent). Scoring is based on a combination of accuracy and reaction time, and the test takes approximately 3 minutes to administer. This test is recommended for ages 3-85. |
 
-### Instrument: Fluid Intelligence (Penn Progressive Matrices)
+#### Instrument: Fluid Intelligence (Penn Progressive Matrices)
 
 **Instrument Description:**
 
@@ -455,7 +457,7 @@ Each "Instrument" contains multiple "Attributes" - these attributes correspond t
 | Penn Progressive Matrices: Total Skipped Items (PMAT24\_A\_SI) | PMAT24\_A\_SI | Open | ^0\*([0-9]|1[0-9])$ | =,NOT =,<,> | Penn Matrix Test: Total Skipped Items (items not presented because maximum errors allowed reached) |
 | Penn Progressive Matrices: Median Reaction Time for Correct Responses (PMAT24\_A\_RTCR) | PMAT24\_A\_RTCR | Open | ^[-+]?[0-9]\*[.]?[0-9]+$ | =,NOT =,<,> | Penn Matrix Test: Median Reaction Time for Correct Responses |
 
-### Instrument: Language/Reading Decoding (Oral Reading Recognition)
+#### Instrument: Language/Reading Decoding (Oral Reading Recognition)
 
 **Instrument Description:**
 
@@ -471,7 +473,7 @@ Each "Instrument" contains multiple "Attributes" - these attributes correspond t
 | NIH Toolbox Oral Reading Recognition Test: Unadjusted Scale Score | ReadEng\_Unadj | Open | ^[-+]?[0-9]\*[.]?[0-9]+$ | =,NOT =,<,> | Separate but parallel reading tests have been developed in English and in Spanish. In either language, the participant is asked to read and pronounce letters and words as accurately as possible. The test administrator scores them as right or wrong. For the youngest children, the initial items require them to identify letters (as opposed to symbols) and to identify a specific letter in an array of 4 symbols. The test is given via a computerized adaptive format and requires approximately 3 minutes. This test is recommended for ages 7-85, but is available for use as young as age 3, if requested. |
 | NIH Toolbox Oral Reading Recognition Test: Age-Adjusted Scale Score | ReadEng\_AgeAdj | Open | ^[-+]?[0-9]\*[.]?[0-9]+$ | =,NOT =,<,> | Separate but parallel reading tests have been developed in English and in Spanish. In either language, the participant is asked to read and pronounce letters and words as accurately as possible. The test administrator scores them as right or wrong. For the youngest children, the initial items require them to identify letters (as opposed to symbols) and to identify a specific letter in an array of 4 symbols. The test is given via a computerized adaptive format and requires approximately 3 minutes. This test is recommended for ages 7-85, but is available for use as young as age 3, if requested. |
 
-### Instrument: Language/Vocabulary Comprehension (Picture Vocabulary)
+#### Instrument: Language/Vocabulary Comprehension (Picture Vocabulary)
 
 **Instrument Description:**
 
@@ -487,7 +489,7 @@ Each "Instrument" contains multiple "Attributes" - these attributes correspond t
 | NIH Toolbox Picture Vocabulary Test: Unadjusted Scale Score | PicVocab\_Unadj | Open | ^[-+]?[0-9]\*[.]?[0-9]+$ | =,NOT =,<,> | This measure of receptive vocabulary is administered in a computerized adaptive format. The respondent is presented with an audio recording of a word and four photographic images on the computer screen and is asked to select the picture that most closely matches the meaning of the word. This test takes approximately 4 minutes to administer and is recommended for ages 3-85. |
 | NIH Toolbox Picture Vocabulary Test: Age-Adjusted Scale Score | PicVocab\_AgeAdj | Open | ^[-+]?[0-9]\*[.]?[0-9]+$ | =,NOT =,<,> | This measure of receptive vocabulary is administered in a computerized adaptive format. The respondent is presented with an audio recording of a word and four photographic images on the computer screen and is asked to select the picture that most closely matches the meaning of the word. This test takes approximately 4 minutes to administer and is recommended for ages 3-85. |
 
-### Instrument: Processing Speed (Pattern Completion Processing Speed)
+#### Instrument: Processing Speed (Pattern Completion Processing Speed)
 
 **Instrument Description:**
 
@@ -503,7 +505,7 @@ Each "Instrument" contains multiple "Attributes" - these attributes correspond t
 | NIH Toolbox Pattern Comparison Processing Speed Test: Unadjusted Scale Score | ProcSpeed\_Unadj | Open | ^[-+]?[0-9]\*[.]?[0-9]+$ | =,NOT =,<,> | This test measures speed of processing by asking participants to discern whether two side-by-side pictures are the same or not. Participants’ raw score is the number of items correct in a 90-second period. The items are designed to be simple to most purely measure processing speed. The test overall takes approximately 3 minutes to administer. This test is recommended for ages 7-85, but is available for use as young as age 3, if requested. |
 | NIH Toolbox Pattern Comparison Processing Speed Test: Age-Adjusted Scale Score | ProcSpeed\_AgeAdj | Open | ^[-+]?[0-9]\*[.]?[0-9]+$ | =,NOT =,<,> | This test measures speed of processing by asking participants to discern whether two side-by-side pictures are the same or not. Participants’ raw score is the number of items correct in a 90-second period. The items are designed to be simple to most purely measure processing speed. The test overall takes approximately 3 minutes to administer. This test is recommended for ages 7-85, but is available for use as young as age 3, if requested. |
 
-### Instrument: Self-regulation/Impulsivity (Delay Discounting)
+#### Instrument: Self-regulation/Impulsivity (Delay Discounting)
 
 **Instrument Description:** 
 
@@ -534,7 +536,7 @@ Each "Instrument" contains multiple "Attributes" - these attributes correspond t
 | Delay Discounting: Area Under the Curve for Discounting of $200 (DDisc\_AUC\_200) | DDisc\_AUC\_200 | Open | ^(([1][.][0]+)|([0]([.][0-9]+)?)|([.][0-9]+))$ | =,NOT =,<,> | Area Under the Curve for Discounting of $200 |
 | Delay Discounting: Area Under the Curve for Discounting of $40,000 (DDisc\_AUC\_40K) | DDisc\_AUC\_40K | Open | ^(([1][.][0]+)|([0]([.][0-9]+)?)|([.][0-9]+))$ | =,NOT =,<,> | Area Under the Curve for Discounting of $40,000 |
 
-### Instrument: Spatial Orientation (Variable Short Penn Line Orientation Test)
+#### Instrument: Spatial Orientation (Variable Short Penn Line Orientation Test)
 
 **Instrument Description:**
 
@@ -551,7 +553,7 @@ Each "Instrument" contains multiple "Attributes" - these attributes correspond t
 | Variable Short Penn Line Orientation: Median Reaction Time Divided by Expected Number of Clicks for Correct (VSPLOT\_CRTE) | VSPLOT\_CRTE | Open | ^[-+]?[0-9]\*[.]?[0-9]+$ | =,NOT =,<,> | Penn Line Orientation: Median Reaction Time Divided by Expected Number of Clicks for Correct Trials |
 | Variable Short Penn Line Orientation: Total Positions Off for All Trials (VSPLOT\_OFF) | VSPLOT\_OFF | Open | ^([0-9]{1,2}|1[0-5][0-9]|16[0-5])$ | =,NOT =,<,> | Penn Line Orientation:  Total Positions Off for All Trials |
 
-### Instrument: Sustained Attention (Short Penn Continuous Performance Test)
+#### Instrument: Sustained Attention (Short Penn Continuous Performance Test)
 
 **Instrument Description:**
 
@@ -573,7 +575,7 @@ Each "Instrument" contains multiple "Attributes" - these attributes correspond t
 | Short Penn Continuous Performance Test: Specificity = SCPT\_TN/(SCPT\_TN + SCPT\_FP)  (SCPT\_SPEC) | SCPT\_SPEC | Open | ^[-+]?[0-9]\*[.]?[0-9]+$ | =,NOT =,<,> | Short Penn CPT Specificity = SCPT\_TN/(SCPT\_TN + SCPT\_FP) |
 | Short Penn Continuous Performance Test: Longest Run of Non-Responses (SCPT\_LRNR) | SCPT\_LRNR | Open | ^[0-9]+$ | =,NOT =,<,> | Short Penn CPT Longest Run of Non-Responses) |
 
-### Instrument: Verbal Episodic Memory (Penn Word Memory Test)
+#### Instrument: Verbal Episodic Memory (Penn Word Memory Test)
 
 **Instrument Description:**
 
@@ -589,7 +591,7 @@ Each "Instrument" contains multiple "Attributes" - these attributes correspond t
 | Penn Word Memory Test:  Total Number of Correct Responses (IWRD\_TOT) | IWRD\_TOT | Open | ^[0-9]+$ | =,NOT =,<,> | Penn Word Memory:  Total Number of Correct Responses |
 | Penn Word Memory Test:  Median Reaction Time for Correct Responses (IWRD\_RTC) | IWRD\_RTC | Open | ^[-+]?[0-9]\*[.]?[0-9]+$ | =,NOT =,<,> | Penn Word Memory:  Median Reaction Time for Correct Responses |
 
-### Instrument: Working Memory (List Sorting)
+#### Instrument: Working Memory (List Sorting)
 
 **Instrument Description:**
 
@@ -611,9 +613,9 @@ Each "Instrument" contains multiple "Attributes" - these attributes correspond t
   
 
 
-# Category: Emotion
+### Category: Emotion
 
-### Instrument: Emotion Recognition (Penn Emotion Recognition Test)
+#### Instrument: Emotion Recognition (Penn Emotion Recognition Test)
 
 **Instrument Description:**
 
@@ -634,7 +636,7 @@ Each "Instrument" contains multiple "Attributes" - these attributes correspond t
 | Penn Emotion Recognition Test: Number of Correct Neutral Identifications (ER40NOE) | ER40NOE | Open | ^[0-8]$ | =,NOT =,<,> | Penn Emotion Recognition: Number of Correct Neutral Identifications |
 | Penn Emotion Recognition Test: Number of Correct Sad Identifications (ER40SAD) | ER40SAD | Open | ^[0-8]$ | =,NOT =,<,> | Penn Emotion Recognition: Number of Correct Sad Identifications |
 
-### Instrument: Negative Affect
+#### Instrument: Negative Affect
 
 **Instrument Description:**
 
@@ -654,7 +656,7 @@ Each "Instrument" contains multiple "Attributes" - these attributes correspond t
 | NIH Toolbox Fear-Somatic Arousal Survey: Unadjusted Scale Score | FearSomat\_Unadj | Open | ^[-+]?[0-9]\*[.]?[0-9]+$ | =,NOT =,<,> | Fear is a concept within the Negative Affect subdomain of Emotion. Fear is best characterized by symptoms of anxiety that reflect autonomic arousal and perceptions of threat. The NIH Toolbox Fear-Somatic Arousal Survey is a 6-item calibrated scale comprised of items from the Mood and Anxiety Symptom Questionnaire. It assesses somatic symptoms related to arousal. |
 | NIH Toolbox Sadness Survey: Unadjusted Scale Score | Sadness\_Unadj | Open | ^[-+]?[0-9]\*[.]?[0-9]+$ | =,NOT =,<,> | Sadness is a concept within the Negative Affect subdomain of Emotion. Sadness is distinguished by low levels of positive affect and comprised of symptoms that are primarily affective (poor mood) and cognitive (negative perceptions of self, the world, and the future) indicators of depression. The NIH Toolbox Sadness Survey is a CAT comprised of items from the PROMIS Depression Item Bank. |
 
-### Instrument: Psychological Well-being
+#### Instrument: Psychological Well-being
 
 **Instrument Description:**
 
@@ -671,7 +673,7 @@ Each "Instrument" contains multiple "Attributes" - these attributes correspond t
 | NIH Toolbox Meaning and Purpose Survey: Unadjusted Scale Score | MeanPurp\_Unadj | Open | ^[-+]?[0-9]\*[.]?[0-9]+$ | =,NOT =,<,> | Meaning and Purpose is a concept within the Psychological Well-Being subdomain of Emotion. Meaning and Purpose is characterized by the extent to which people feel their life matters or makes sense. This self-report measure for adults (ages 18 and above) is a CAT comprised of items from the Meaning in Life Questionnaire, the Life Engagement Test, the MHI, and the FACIT-Sp. |
 | NIH Toolbox Positive Affect Survey: Unadjusted Scale Score | PosAffect\_Unadj | Open | ^[-+]?[0-9]\*[.]?[0-9]+$ | =,NOT =,<,> | Positive Affect is a concept within the Psychological Well-Being subdomain of Emotion. Positive Affect can be described as feelings that reflect a level of pleasurable engagement with the environment such as happiness, joy, excitement, enthusiasm, and contentment. This parent-report measure (for children ages 8-12) is a CAT comprised of items from the PANAS-X. It assesses both activated (i.e., happiness, joy) as well as unactivated (i.e., serenity, peace) aspects of positive affect. |
 
-### Instrument: Social Relationships
+#### Instrument: Social Relationships
 
 **Instrument Description:**
 
@@ -691,7 +693,7 @@ Each "Instrument" contains multiple "Attributes" - these attributes correspond t
 | NIH Toolbox Emotional Support Survey: Unadjusted Scale Score | EmotSupp\_Unadj | Open | ^[-+]?[0-9]\*[.]?[0-9]+$ | =,NOT =,<,> | Social Support is a concept within the Social Relationships subdomain of Emotion. Perceived social support is the extent to which an individual views his/her social relationships as available to provide aid in times of need or when problems arise (Cohen, 2004).   This includes emotional/informational types of perceived social support for children and adolescents. Emotional Support refers to the perception that people in one's social network are available to listen to one's problems with empathy, caring and understanding, and Informational Support refers to the perception that people in one's social network are available to provide information or advice needed to solve problems that arise.  This self-report measure for children and adolescents (ages 8-17) is a 7-item calibrated scale. |
 | NIH Toolbox Instrumental Support Survey: Unadjusted Scale Score | InstruSupp\_Unadj | Open | ^[-+]?[0-9]\*[.]?[0-9]+$ | =,NOT =,<,> | Social Support is a concept within the Social Relationships subdomain of Emotion. Perceived social support is the extent to which an individual views his/her social relationships as available to provide aid in times of need or when problems arise. This includes instrumental and emotional/informational types of perceived social support. Instrumental Support refers to the perception that people in one's social network are available to provide material or functional aid in completing daily tasks (such as making meals or providing transportation) if needed. This self-report measure for adults (ages 18 and above) is an 8-item calibrated scale. |
 
-### Instrument: Stress and Self Efficacy
+#### Instrument: Stress and Self Efficacy
 
 **Instrument Description:**
 
@@ -707,9 +709,9 @@ Each "Instrument" contains multiple "Attributes" - these attributes correspond t
 | NIH Toolbox Perceived Stress Survey: Unadjusted Scale Score | PercStress\_Unadj | Open | ^[-+]?[0-9]\*[.]?[0-9]+$ | =,NOT =,<,> | Perceived Stress is a concept within the Stress & Self-Efficacy subdomain of Emotion. Perceived Stress is defined by individual perceptions about the nature of events and their relationship to the values and coping resources of an individual. This self-report measure for adults (ages 18 and above) is a CAT comprised of items from the Perceived Stress Scale-10. . It assesses how unpredictable, uncontrollable, and overloading respondents find their lives. |
 | NIH Toolbox Self-Efficacy Survey: Unadjusted Scale Score | SelfEff\_Unadj | Open | ^[-+]?[0-9]\*[.]?[0-9]+$ | =,NOT =,<,> | Self-Efficacy is a concept within the Stress & Self-Efficacy subdomain of Emotion. Self-Efficacy can be described as a person's belief in their capacity to manage their functioning and have control over meaningful events. This self-report measure for adults (ages 18 and above) is a CAT comprised of items modified from the General Self-Efficacy Scale (Schwarzer). It assesses respondents' sense of global self-efficacy. |
 
-# Category: FreeSurfer
+### Category: FreeSurfer
 
-### Instrument: FreeSurfer Summary Statistics
+#### Instrument: FreeSurfer Summary Statistics
 
 
 
@@ -725,7 +727,7 @@ Each "Instrument" contains multiple "Attributes" - these attributes correspond t
 | Right hemisphere cortical white matter volume | FS\_R\_WM\_Vol | Open | ^[-+]?[0-9]\*[.]?[0-9]+$ | =,NOT =,<,> |  |
 | Total cortical white matter volume | FS\_Tot\_WM\_Vol | Open | ^[-+]?[0-9]\*[.]?[0-9]+$ | =,NOT =,<,> |  |
 
-### Instrument: Volume (Subcortical) Segmentation
+#### Instrument: Volume (Subcortical) Segmentation
 
 
 
@@ -777,7 +779,7 @@ Each "Instrument" contains multiple "Attributes" - these attributes correspond t
 | CC\_Mid\_Anterior Volume | FS\_CC\_MidAnterior\_Vol | Open | ^[0-9]+$ | =,NOT =,<,> | Neurolex definition:  <a href=\"<http://neurolex.org/wiki/Category:Corpus_callosum>\">Corpus\_callosum</a> |
 | CC\_Anterior Volume | FS\_CC\_Anterior\_Vol | Open | ^[0-9]+$ | =,NOT =,<,> | Neurolex definition:  <a href=\"<http://neurolex.org/wiki/Category:Corpus_callosum>\">Corpus\_callosum</a> |
 
-### Instrument: Surface Area
+#### Instrument: Surface Area
 
 
 
@@ -852,7 +854,7 @@ Each "Instrument" contains multiple "Attributes" - these attributes correspond t
 | Right transversetemporal Surface Area | FS\_R\_Transversetemporal\_Area | Open | ^[0-9]+$ | =,NOT =,<,> | Neurolex definition: <a href=\"<http://neurolex.org/wiki/Category:Transverse_temporal_cortex>\">Transverse Temporal Cortex</a> |
 | Right insula Surface Area | FS\_R\_Insula\_Area | Open | ^[0-9]+$ | =,NOT =,<,> | Neurolex definition: <a href=\"<http://neurolex.org/wiki/Category:Insula>\">Insula</a> |
 
-### Instrument: Surface Thickness
+#### Instrument: Surface Thickness
 
 
 
@@ -927,9 +929,9 @@ Each "Instrument" contains multiple "Attributes" - these attributes correspond t
 | Right transversetemporal Average Thickness |  FS\_R\_Transversetemporal\_Thck | Open | ^[-+]?[0-9]\*[.]?[0-9]+$ | =,NOT =,<,> | Neurolex definition: <a href=\"<http://neurolex.org/wiki/Category:Transverse_temporal_cortex>\">Transverse Temporal Cortex</a> |
 | Right insula Average Thickness |  FS\_R\_Insula\_Thck | Open | ^[-+]?[0-9]\*[.]?[0-9]+$ | =,NOT =,<,> | Neurolex definition: <a href=\"<http://neurolex.org/wiki/Category:Insula>\">Insula</a> |
 
-# Category: Motor
+### Category: Motor
 
-### Instrument: Endurance (2 minute walk test)
+#### Instrument: Endurance (2 minute walk test)
 
 
 > This test is adapted from the American Thoracic Society's 6-Minute Walk Test Protocol.  This test measures sub-maximal cardiovascular endurance by recording the distance that the participant is able to walk on a 50-foot (out and back) course in 2 minutes.  The participant's raw score is the distance in feet and inches walked in 2 minutes. The test overall takes approximately 4 minutes to administer (with instructions and practice). This test is recommended for ages 3-85.
@@ -943,7 +945,7 @@ Each "Instrument" contains multiple "Attributes" - these attributes correspond t
 | NIH Toolbox 2-minute Walk Endurance Test: Unadjusted Scale Score | Endurance\_Unadj | Open | ^[-+]?[0-9]\*[.]?[0-9]+$ | =,NOT =,<,> | This test is adapted from the American Thoracic Society’s 6-Minute Walk Test Protocol. This test measures sub-maximal cardiovascular endurance by recording the distance that the participant is able to walk on a 50-foot (out and back) course in 2 minutes. The participant’s raw score is the distance in feet and inches walked in 2 minutes. The test overall takes approximately 4 minutes to administer (with instructions and practice). This test is recommended for ages 3-85. |
 | NIH Toolbox 2-minute Walk Endurance Test: Age-Adjusted Scale Score | Endurance\_AgeAdj | Open | ^[-+]?[0-9]\*[.]?[0-9]+$ | =,NOT =,<,> | This test is adapted from the American Thoracic Society’s 6-Minute Walk Test Protocol. This test measures sub-maximal cardiovascular endurance by recording the distance that the participant is able to walk on a 50-foot (out and back) course in 2 minutes. The participant’s raw score is the distance in feet and inches walked in 2 minutes. The test overall takes approximately 4 minutes to administer (with instructions and practice). This test is recommended for ages 3-85. |
 
-### Instrument: Locomotion (4-meter walk test)
+#### Instrument: Locomotion (4-meter walk test)
 
 
 > This test is adapted from the American Thoracic Society's 6-Minute Walk Test Protocol.  This test measures sub-maximal cardiovascular endurance by recording the distance that the participant is able to walk on a 50-foot (out and back) course in 2 minutes.  The participant's raw score is the distance in feet and inches walked in 2 minutes. The test overall takes approximately 4 minutes to administer (with instructions and practice). This test is recommended for ages 3-85.
@@ -956,7 +958,7 @@ Each "Instrument" contains multiple "Attributes" - these attributes correspond t
 | --- | --- | --- | --- | --- | --- |
 | NIH Toolbox 4-Meter Walk Gait Speed Test: Computed Score | GaitSpeed\_Comp | Open | ^[-+]?[0-9]\*[.]?[0-9]+$ | =,NOT =,<,> | This test is adapted from the 4-meter walk test in the Short Physical Performance Battery. Participants are asked to walk a short distance (four meters) at their usual pace. Participants complete one practice and then two timed trials. Raw scores are recorded as the time in seconds required to walk 4 meters on each of the two trials, with the better trial used for scoring. The test takes approximately three minutes to administer (including instructions and practice). This test is recommended for ages 7-85. Computed scores are in meters per second. |
 
-### Instrument: Dexterity (9-hole Pegboard)
+#### Instrument: Dexterity (9-hole Pegboard)
 
 
 > This simple test of manual dexterity records the time required for the participant to accurately place and remove 9 plastic pegs into a plastic pegboard.  The protocol includes 1 practice and 1 timed trial with each hand.  Raw scores are recorded as time in seconds that it takes the participant to complete the task with each hand (a separate score for each). The test takes approximately 4 minutes to administer and is recommended for ages 3-85.
@@ -970,7 +972,7 @@ Each "Instrument" contains multiple "Attributes" - these attributes correspond t
 | NIH Toolbox 9-hole Pegboard Dexterity Test: Unadjusted Scale Score | Dexterity\_Unadj | Open | ^[-+]?[0-9]\*[.]?[0-9]+$ | =,NOT =,<,> | This simple test of manual dexterity records the time required for the participant to accurately place and remove 9 plastic pegs into a plastic pegboard. The protocol includes 1 practice and 1 timed trial with each hand. Raw scores are recorded as time in seconds that it takes the participant to complete the task with the dominant hand. The test takes approximately 4 minutes to administer and is recommended for ages 3-85. |
 | NIH Toolbox 9-hole Pegboard Dexterity Test: Age-Adjusted Scale Score | Dexterity\_AgeAdj | Open | ^[-+]?[0-9]\*[.]?[0-9]+$ | =,NOT =,<,> | This simple test of manual dexterity records the time required for the participant to accurately place and remove 9 plastic pegs into a plastic pegboard. The protocol includes 1 practice and 1 timed trial with each hand. Raw scores are recorded as time in seconds that it takes the participant to complete the task with the dominant hand. The test takes approximately 4 minutes to administer and is recommended for ages 3-85. |
 
-### Instrument: Strength (Grip Strength Dynamometry)
+#### Instrument: Strength (Grip Strength Dynamometry)
 
 
 > This protocol is adapted from the grip strength testing protocol of the American Society of Hand Therapy.  Participants are seated in a chair with their feet touching the ground.  With the elbow bent to 90 degrees and the arm against the trunk, wrist at neutral, participants squeeze the Jamar Plus Digital dynamometer as hard as they can for a count of three.  The dynamometer provides a digital reading of force in pounds.  A practice trial at less than full force and 1 test trial are completed with each hand. The test takes approximately 3 minutes to administer and is recommended for ages 3-85.
@@ -984,9 +986,9 @@ Each "Instrument" contains multiple "Attributes" - these attributes correspond t
 | NIH Toolbox Grip Strength Test: Unadjusted Scale Score | Strength\_Unadj | Open | ^[-+]?[0-9]\*[.]?[0-9]+$ | =,NOT =,<,> | This protocol is adapted from the grip strength testing protocol of the American Society of Hand Therapy. Participants are seated in a chair with their feet touching the ground. With the elbow bent to 90 degrees and the arm against the trunk, wrist at neutral, participants squeeze the Jamar Plus Digital dynamometer as hard as they can for a count of three. The dynamometer provides a digital reading of force in pounds. A practice trial at less than full force and 1 test trial are completed with each hand.The Grip Strength Test provides a score for each hand, with the primary Toolbox score being the number of pounds of force the participant was able to generate using his/her dominant hand.The test takes approximately 3 minutes to administer and is recommended for ages 3-85. |
 | NIH Toolbox Grip Strength Test: Age-Adjusted Scale Score | Strength\_AgeAdj | Open | ^[-+]?[0-9]\*[.]?[0-9]+$ | =,NOT =,<,> | This protocol is adapted from the grip strength testing protocol of the American Society of Hand Therapy. Participants are seated in a chair with their feet touching the ground. With the elbow bent to 90 degrees and the arm against the trunk, wrist at neutral, participants squeeze the Jamar Plus Digital dynamometer as hard as they can for a count of three. The dynamometer provides a digital reading of force in pounds. A practice trial at less than full force and 1 test trial are completed with each hand. The test takes approximately 3 minutes to administer and is recommended for ages 3-85. |
 
-# Category: Personality
+### Category: Personality
 
-### Instrument: Five Factor Model (NEO-FFI)
+#### Instrument: Five Factor Model (NEO-FFI)
 
 
 > There is consensus that a five factor model captures the major facets of human personality across cultures (Heine and Buchtel 2009): a) neuroticism; b) extroversion/introversion; c) agreeableness; d) openness; and e) conscientiousness (Goldberg 1993; McCrae and Costa 2008). We are administering the 60 item version of the Costa and McRae Neuroticism/Extroversion/Openness Five Factor Inventory (NEO-FFI), which has shown excellent reliability and validity (McCrae and Costa 2004). This measure was available as part of the Penn Computerized Cognitive Battery (Gur et al. 2001a; Gur et al. 2010).
@@ -1013,9 +1015,9 @@ Each "Instrument" contains multiple "Attributes" - these attributes correspond t
   
 
 
-# Category: Psychiatric and Life Function
+### Category: Psychiatric and Life Function
 
-### Restricted Instrument: Life Function (Achenbach Adult Self-Report, Syndrome Scales and DSM-Oriented Scale)
+#### Restricted Instrument: Life Function (Achenbach Adult Self-Report, Syndrome Scales and DSM-Oriented Scale)
 
 
 > The NIH toolbox contains self-report measures of a number of important domains of experience, including positive and negative affect, stress, anxiety, depression and social support. To obtain additional self-report information on an even broader variety of domains, we also administer the Achenbach Adult Self-Report for Ages 18-59 (Achenbach 2009). Specifically, we administer the 123 items from Section VIII. These can be used to generate the ASR Syndrome Scales and the ASR DSM-Oriented Scales.
@@ -1066,7 +1068,7 @@ Each "Instrument" contains multiple "Attributes" - these attributes correspond t
 | ASR DSM Antisocial Personality Problems Raw Score (DSM\_Antis\_Raw) | DSM\_Antis\_Raw | **Tier 1 Restricted** | ^0\*([0-9]|[1-3][0-9]|40)$ | =,NOT =,<,> | ASR DSM Antisocial Personality Problems Raw Score |
 | ASR DSM Antisocial Personality Problems Gender and Age Adjusted Percentile (DSM\_Antis\_Pct)  | DSM\_Antis\_Pct | **Tier 1 Restricted** | ^0\*([5-9][0-9]|100)$ | =,NOT =,<,> | ASR DSM Antisocial Personality Problems Gender and Age Adjusted Percentile |
 
-### Restricted Instrument: Psychiatric History
+#### Restricted Instrument: Psychiatric History
 
 
 
@@ -1083,9 +1085,9 @@ Each "Instrument" contains multiple "Attributes" - these attributes correspond t
   
 
 
-# Category: Sensory
+### Category: Sensory
 
-### Instrument: Audition (Words in Noise)
+#### Instrument: Audition (Words in Noise)
 
 
 
@@ -1093,7 +1095,7 @@ Each "Instrument" contains multiple "Attributes" - these attributes correspond t
 | --- | --- | --- | --- | --- | --- |
 | NIH Toolbox Words-In-Noise Age 6+: Computed Score | Noise\_Comp | Open | ^[-+]?[0-9]\*[.]?[0-9]+$ | =,NOT =,<, | This automated audiometric test measures hearing thresholds at six different frequencies (.5, 1, 2, 4, 6 and 8 kHz), separately in the left and right ears. On each trial, the participant’s task is to detect whether a pure tone was presented via headphones by answering yes (tone heard) or no (tone not heard). This test takes approximately nine minutes to administer and is recommended for ages 6-85. Based on the participant’s responses, the computer software automatically scores each trial at each of the frequencies for left and right ears, determining the hearing threshold (in decibels)—that is, the level below which the participant cannot hear the tone.To provide a unifying score for Toolbox users, a single hearing metric is provided that is commonly used: a Pure Tone Average (PTA). This is calculated by averaging the threshold scores of 1, 2 and 4 kHz frequencies. Scores for each ear are calculated, with the PTA from the better ear reported as the primary score (i.e., the ear with the lower PTA). |
 
-### Instrument: Olfaction (Odor Identification Test)
+#### Instrument: Olfaction (Odor Identification Test)
 
 
 
@@ -1102,7 +1104,7 @@ Each "Instrument" contains multiple "Attributes" - these attributes correspond t
 | NIH Toolbox Odor Identification Age 3+ Unadjusted Scale Score | Odor\_Unadj | Open | ^[-+]?[0-9]\*[.]?[0-9]+$ | =,NOT =,<,> |  |
 | NIH Toolbox Odor Identification Age 3+ Age-Adjusted Scale Score | Odor\_AgeAdj | Open | ^[-+]?[0-9]\*[.]?[0-9]+$ | =,NOT =,<,> |  |
 
-### Instrument: Pain (Pain Intensity and Interference Surveys)
+#### Instrument: Pain (Pain Intensity and Interference Surveys)
 
 
 
@@ -1111,7 +1113,7 @@ Each "Instrument" contains multiple "Attributes" - these attributes correspond t
 | NIH Toolbox Pain Intensity Survey Age 18+: Raw ScoreExcluded currently due to glich in the Toolbox data download | PainIntens\_RawScore |  |  |  | This measure consists of a single item measuring immediate (i.e., acute) pain in adults. It asks a participant to rate level of pain experienced “over the last seven days.” It takes less than one minute to administer and is recommended for ages 18-85.Scoring Process: The single item is simply scored on a 0-10 scale, with 0 representing no pain, and 10 representing the “worst imaginable pain.” No derived scores are available. |
 | NIH Toolbox Pain Interference Survey Age 18+: T-score | PainInterf\_Tscore | Open | ^[-+]?[0-9]\*[.]?[0-9]+$ | =,NOT =,<,> | This brief self-report scale measures the degree to which pain interferes with other activities in life in adults. Pain interference items were developed as part of the NIH PROMIS. This measure is administered as a CAT and takes approximately three minutes. It is recommended for ages 18-85. Each item administered has a 5-point scale with options ranging from “not at all” to “very much” on questions about how much pain interferes with aspects of one’s life. The survey is scored, and while no Toolbox norms are available for this measure, the scores are converted to general T-scores based on the PROMIS sample to whom this test was given. |
 
-### Instrument: Taste (Taste Intensity Test)
+#### Instrument: Taste (Taste Intensity Test)
 
 
 
@@ -1120,7 +1122,7 @@ Each "Instrument" contains multiple "Attributes" - these attributes correspond t
 | NIH Toolbox Regional Taste Intensity Age 12+ Unadjusted Scale Score | Taste\_Unadj | Open | ^[-+]?[0-9]\*[.]?[0-9]+$ | =,NOT =,<,> |  |
 | NIH Toolbox Regional Taste Intensity Age 12+ Age-Adjusted Scale Score | Taste\_AgeAdj | Open | ^[-+]?[0-9]\*[.]?[0-9]+$ | =,NOT =,<,> |  |
 
-### Instrument: Vision (EVA Scores and Farnsworth Test)
+#### Instrument: Vision (EVA Scores and Farnsworth Test)
 
 
 
@@ -1132,7 +1134,7 @@ Each "Instrument" contains multiple "Attributes" - these attributes correspond t
 | EVA score - Denominator | EVA\_Denom | **Tier 1 Restricted** | ^[-+]?[0-9]\*[.]?[0-9]+$ | =,NOT =,<,> |  |  |
 | Eyeglass correction | Correction | **Tier 1 Restricted** |  | ^[-+]?[0-9]\*[.]?[0-9]+$ | =,NOT =,<,> |  |
 
-### Instrument: Contrast Sensitivity (Mars Contrast Sensitivity)
+#### Instrument: Contrast Sensitivity (Mars Contrast Sensitivity)
 
 
 > Contrast sensitivity is measured using the Mars Contrast Sensitivity Test (Arditi et al. 2005), a brief, valid and reliable measure that improves upon the traditional Pelli-Robson measure (Dougherty et al. 2005; Haymes et al. 2006; Thayaparan et al. 2007).
@@ -1147,9 +1149,9 @@ Each "Instrument" contains multiple "Attributes" - these attributes correspond t
 | Errors on Mars | Mars\_Errs | Open | ^[0-9]+$ | =,NOT =,<,> |  |
 | Mars Final Contrast Sensitivity Score | Mars\_Final | Open | ^[-+]?[0-9]\*[.]?[0-9]+$ | =,NOT =,<,> |  |
 
-# Category: Substance Use
+### Category: Substance Use
 
-### Instrument: Breathalyzer and Drug Test Results
+#### Instrument: Breathalyzer and Drug Test Results
 
 
 
@@ -1164,7 +1166,7 @@ Each "Instrument" contains multiple "Attributes" - these attributes correspond t
 | Positive test for MethAmphetamine | MethAmphetamine | **Tier 2 Restricted** |  | =,NOT = |  |
 | Positive test for Oxycontin | Oxycontin | **Tier 2 Restricted** |  | =,NOT = |  |
 
-### Instrument: Alcohol Use 7-Day Retrospective
+#### Instrument: Alcohol Use 7-Day Retrospective
 
 
 
@@ -1190,7 +1192,7 @@ Each "Instrument" contains multiple "Attributes" - these attributes correspond t
 | Avg total weekday drinks/day in past 7 days (Other Alcohol) | Avg\_Weekday\_Other\_Alc\_7days | **Tier 2 Restricted** | ^[0-9]+$ | =,NOT =,<,> |  |
 | Avg total weekend drinks/day in past 7 days (Other Alcohol) | Avg\_Weekend\_Other\_Alc\_7days | **Tier 2 Restricted** | ^[0-9]+$ | =,NOT =,<,> |  |
 
-### Instrument: Alcohol Use and Dependence
+#### Instrument: Alcohol Use and Dependence
 
 
 
@@ -1212,7 +1214,7 @@ Each "Instrument" contains multiple "Attributes" - these attributes correspond t
 | Frequency drunk in heaviest 12-month period | SSAGA\_Alc\_Hvy\_Frq\_Drk | **Tier 2 Restricted** | ^[0-9]+$ | =,NOT =,<,> | Frequency drunk in heaviest 12-month drinking period of participant's lifetime: 1-7 days/week = 1, 1-3 days/month = 2, 1-11 days/year = 3, never = 4 |
 | Lifetime max drinks in single day | SSAGA\_Alc\_Hvy\_Max\_Drinks | **Tier 2 Restricted** | ^[0-9]+$ | =,NOT =,<,> | Lifetime max drinks consumed in single day: <=3 = 1; 4-6 = 2; 7-9 = 3; 10-12 = 4; 13-15 = 5; 16-20 = 6; 21+ = 7 if male, 6 if female |
 
-### Instrument: Tobacco Use 7-Day Retrospective
+#### Instrument: Tobacco Use 7-Day Retrospective
 
 
 
@@ -1242,7 +1244,7 @@ Each "Instrument" contains multiple "Attributes" - these attributes correspond t
 | Avg weekday times used OTHER TOBACCO per day in past 7 days | Avg\_Weekday\_Other\_Tobacco\_7days | **Tier 2 Restricted** | ^[0-9]+$ | =,NOT =,<,> |  |
 | Avg weekend times used OTHER TOBACCO per day in past 7 days | Avg\_Weekend\_Other\_Tobacco\_7days | **Tier 2 Restricted** | ^[0-9]+$ | =,NOT =,<,> |  |
 
-### Instrument: Tobacco Use and Dependence
+#### Instrument: Tobacco Use and Dependence
 
 
 
@@ -1262,7 +1264,7 @@ Each "Instrument" contains multiple "Attributes" - these attributes correspond t
 | Years since respondent smoked last cigarette | SSAGA\_TB\_Yrs\_Since\_Quit | **Tier 2 Restricted** | ^[0-9]+$ | =,NOT =,<,> | For those who were/are regular smokers, Years since respondent smoked last cigarette (0; 1; 2 or more) |
 | Years smoked | SSAGA\_TB\_Yrs\_Smoked | **Tier 2 Restricted** | ^[0-9]+$ | =,NOT =,<,> | For those who were/are regular smokers, Years smoked (1-5 years = 5; 6-10 = 10; 11-15 = 15; 16+ = 18) |
 
-### Instrument: Illicit Drug Use
+#### Instrument: Illicit Drug Use
 
 
 
@@ -1275,7 +1277,7 @@ Each "Instrument" contains multiple "Attributes" - these attributes correspond t
 | Times used sedatives | SSAGA\_Times\_Used\_Sedatives | **Tier 2 Restricted** | ^[0-9]+$ | =,NOT =,<,> | Times used sedatives: never used = 0, 1-2 = 1, 3-5 = 1, 6-10 = 5, >10 = 5 |
 | Times used stimulants | SSAGA\_Times\_Used\_Stimulants | **Tier 2 Restricted** | ^[0-9]+$ | =,NOT =,<,> | Times used stimulants: never used = 0, 1-2 = 1, 3-5 = 1, 6-10 = 5, >10 = 5 |
 
-### Instrument: Marijuana Use and Dependence
+#### Instrument: Marijuana Use and Dependence
 
 
 
@@ -1294,7 +1296,7 @@ Each "Instrument" contains multiple "Attributes" - these attributes correspond t
 
 
 
-# Attachments
+### Attachments
 
 - [HCP_S1200_DataDictionary_Oct_30_2023.csv](./assets/HCP_S1200_DataDictionary_Oct_30_2023.csv)
 - [HCP_S1200_DataDictionary_Oct_30_2023.xlsx](./assets/HCP_S1200_DataDictionary_Oct_30_2023.xlsx)
