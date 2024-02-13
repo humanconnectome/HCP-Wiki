@@ -1,3 +1,5 @@
+## Gradient Vector Direction table for HCP 3T dMRI
+
 ```
 Intro information:  
 ### Gradient direction table for Human Connectome Project (HCP) dMRI (WU-Minn
@@ -24,6 +26,4 @@ Intro information:
  
 
 File with vectors: 
-## Attachments
-
-- [HCP_Diffusion_Vectors.txt](./assets/HCP_Diffusion_Vectors.txt)
+ [HCP_Diffusion_Vectors.txt](./assets/HCP_Diffusion_Vectors.txt)
