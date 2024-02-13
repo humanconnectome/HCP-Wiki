@@ -1,3 +1,5 @@
+## Accessing ConnectomeDB Resource Data without Aspera (REST)
+
 With the increasing frequency and duration of outages of the ConnectomeDB Aspera server as both the server and licensed software ages, it is sometimes necessary to get resource page data via REST.  It's a fairly straightforward process to convert Resource page Aspera URLs to REST URLs that can be used for downloading resource data.  
 Here are the steps:
 
