@@ -1,3 +1,5 @@
+## Using ConnectomeDB data on Amazon S3
+
 Users who are familiar with using Amazon Web Services for data processing jobs will be happy to know that HCP data is now available directly on AWS through an HCP-hosted S3 storage container. Here are setup instructions for accessing the data through AWS. 
 
 **1. Create an account** on ConnectomeDB (if necessary) and login. You will see a list of datasets available in ConnectomeDB, some of which will also be available on AWS. 
