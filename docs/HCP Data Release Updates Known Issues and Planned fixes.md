@@ -1,8 +1,10 @@
+## HCP-YA Data Release Updates Known Issues and Planned fixes
+
 The WU-Minn Human Connectome Project (HCP) releases imaging data collected on subjects on a regular basis. Details on what data is included in each release are available in the Reference Manual for that release on the [HCP documentation page](https://www.humanconnectome.org/study/hcp-young-adult/documentation).  On this wiki page, we document known updates, data issues, bugs, and known missing files in the data distributed with each release (including those distributed in Connectome in a box for each release) and plans to fix or patch each bug. Date added is listed at the beginning of entries.
 
-# 1200 Subjects Release (March 1, 2017)
+## 1200 Subjects Release (March 1, 2017)
 
-## **Major Issues**
+### **Major Issues**
 
 * 5/4/2020: **Subject 169444 preprocessed data from several 7T fMRI runs unusable**
 
@@ -282,7 +284,7 @@ With the S1200 release, a subject data measure (QC\_Issue) has been added to Con
 
 *****Issue Cannot be Fixed*****
 
-## *******Minor Issues & Updates*******
+### *******Minor Issues & Updates*******
 
 * + ***2/12/2021: **Some variable names in the “Expanded FreeSurfer Data” are mislabelled as left hemisphere values rather than right hemisphere values*****  
 	The following variables appear twice (duplicate):
@@ -361,9 +363,9 @@ Because this issue is isolated to subjects newly released with S1200, this DOES 
 
 **Planned Fix:**The missing \*TAB.txt and \*Physio\_log.txt files will be transferred to the appropriate preprocessing {Subject\_ID}/MNINonLinear/Results directories, the affected rfMRI and tfMRI preprocessing packages will be updated in ConnectomeDB, and AWS S3 will be updated.
 
-# Initial 7T fMRI Release (June 20, 2016)
+## Initial 7T fMRI Release (June 20, 2016)
 
-## **Major Issues**
+### **Major Issues**
 
 * ***7T Preprocessed fMRI AP run data ***(Resting State, Retinotopy, and Movie-watching Task) un******warped using the incorrect direction*** in the fMRIVolume pipeline for all 7T Subjects***
 
@@ -373,9 +375,9 @@ A bug in the 7T fMRIVolume pipeline caused all Anterior->Posterior (AP phase-enc
   
 
 
-# 900 Subjects Release (December 8, 2015)
+## 900 Subjects Release (December 8, 2015)
 
-## **Major Issues**
+### **Major Issues**
 
 * ***ASR\_{Syndrome}\_Pct scores are T-scores (not Age/Gender adjusted Percentiles)***
 
@@ -441,7 +443,7 @@ Two versions of the image reconstruction algorithm applied to dMRI and fMRI data
 
 An artifact (characterized by a striped spatial pattern in image intensity around orbitofrontal susceptibility areas) caused by intermittent technical problems with the 32 channel head coil has been found in a limited number of fMRI scan session (24 rfMRI scans in 18 subjects; 6 tfMRI scans in 6 subjects) that were obtained during the summer of 2013. We have opted to release these data for public use with the expectation that investigators will review the data, before and after their chosen pre-processing steps, to decide whether this artifact might affect their data analysis. See[Intermittent orbitofrontal artifact affecting some fMRI scans](../PublicData/Intermittent orbitofrontal artifact affecting some fMRI scans.md)  for details, including a list of affected subjects/scans and example images.
 
-## ****Minor Issues & Updates****
+### ****Minor Issues & Updates****
 
 * + ******Missing ******tfMRI\_WM\_RL preprocessing******files for Subject 668361******
 
@@ -496,9 +498,9 @@ The field maps for these subjects were not collected or are unusable.  Field ma
 
 We anticipate that a limited number of subjects that will be included in upcoming HCP releases will also have this issue. Those subjects will be identified on this Issues wiki in the appropriate release section.
 
-# 500 Subjects Release (June 6, 2014) + MEG2 (November 26, 2014)
+## 500 Subjects Release (June 6, 2014) + MEG2 (November 26, 2014)
 
-## **Major Issues**
+### **Major Issues**
 
 * ***ASR\_{Syndrome}\_Pct scores are T-scores (not Age/Gender adjusted Percentiles)***
 
@@ -588,7 +590,7 @@ A problem with the early stages of the v3.1 (500 Subjects) preprocessing of diff
 
 **Completed Fix:** Diffusion data for subject 173132 has been completely reprocessed and the fixed version is available in ConnectomeDB as of 10/31/14.  These files will need to be replaced for 500 Subjects Connectome in a Box dated 20140805 or earlier. The reprocessed files are included in 500 Subjects Connectome in a Box versions dated 20141203 and later. 
 
-## **Minor Issues and Updates**
+### **Minor Issues and Updates**
 
 * + ***Subjects without Field Maps for Structural scans: 111514 & 662551***  
 	Two subjects from the 500 Subjects + MEG2 release were released without gradient-recalled echo (GRE) field maps accompanying their structural (T1 and T2) scans. The field maps for these subjects were not collected or are unusable.  Field maps are not required for HCP *structural* processing (in contrast to fMRI processing, where field maps *are* required).  However, the lack of field maps prevents us from performing readout distortion correction on the structurals and will have these two effects:  
@@ -660,9 +662,9 @@ Note: Users can also download task analysis data packages containing the results
 	  
 	**Completed Fix:** We have updated the twin status/zygosity information for these subjects in ConnectomeDB as of June 12, 2014. Restricted Access users that downloaded the restricted data during this time period should update their restricted data accordingly.
 
-# Q3 Release (September 23, 2013; more dMRI on November 26, 2013, all Q1-Q3 diffusion available January 31, 2014)
+## Q3 Release (September 23, 2013; more dMRI on November 26, 2013, all Q1-Q3 diffusion available January 31, 2014)
 
-## **Major Issues**
+### **Major Issues**
 
 * ***Image reconstruction algorithm versions***
 
@@ -689,7 +691,7 @@ ${FSLDIR}/bin/flirt -interp spline -in T1w\_acpc\_dc\_restore -ref T1w\_acpc\
 
 ${FSLDIR}/bin/applywarp --rel --interp=spline -i T1w\_acpc\_dc\_restore -r T1w\_acpc\_dc\_restore\_1.25 -o T1w\_acpc\_dc\_restore\_1.25
 
-## **Minor Issues and Updates**
+### **Minor Issues and Updates**
 
 * + ***Subjects released in Q3 (or earlier) that were not re-released in the 500 Subjects Release***  
 	Data for a handful of subjects were released in Q3, but were not re-released in the 500 Subjects Release, because of minor issues. Some subjects did not have gradient-echo fieldmaps to accompany the structurals. The GE fieldmaps are not mandatory for running the structurals through the HCP pipelines, but we didn't get the process for handling those exceptions automated in time for the 500 subject release.  The affected subjects are:  
@@ -734,13 +736,13 @@ Note: With the Q3 and 500 Subjects release, users can also download task analysi
 	
 	 ****Completed Fix:**** These files are corrected and released as part of the March 2014 data patch.
 
-# **Q2 Release (June 14, 2013)**
+## **Q2 Release (June 14, 2013)**
 
-#### ***including Q1 + Q2 v2 preprocessed data***
+##### ***including Q1 + Q2 v2 preprocessed data***
 
 **Users who have the Q1+Q2 data**: A zipped archive is available containing all of the fixed files for all Q1+Q2 subjects and a python script for patching existing download or Connectome in a box data, which places the fixed files in the HCP directory structure (details in the [HCP Q2 Data Release Reference Manual](http://humanconnectome.org/documentation/Q2/Q2_Release_Reference_Manual.pdf) and the associated directory structure [Appendix III](http://humanconnectome.org/documentation/data-release/Q2_Release_Appendix_III.pdf)).   [Download the Q1/Q2 data patch script here](https://hcpx-demo.humanconnectome.org/app/action/ChooseDownloadResources?project=HCP_Resources&resource=Patch&filePath=HCP_Q3_Patch.zip) (requires ConnectomeDB login). 
 
-##  ****Major Issues****
+###  ****Major Issues****
 
 * *****Subjects 209733 and 528446 removed from ConnectomeDB*****
 
@@ -776,7 +778,7 @@ Subjects/affected directories with this bug:
 
 **Users should run the Q1/Q2 data patch script to correct all these incomplete files ([download available here](https://db.humanconnectome.org/app/action/ChooseDownloadResources?project=HCP_Resources&resource=Patch&filePath=HCP_Q3_Patch.zip))** (requires ConnectomeDB login).
 
-## ****Minor Issues****
+### ****Minor Issues****
 
 * + *****task fMRI .fsf files parameters incorrect, or .fsf file missing*****We ran a script checking the parameters of the tfMRI .fsf files from the Q2 release and found the following bugs for the indicated subjects:  
 	e.g.  ${StudyFolder}/${SubjectID}/MNINonLinear/Results/tfMRI\_WM\_RL/\*.fsf  
@@ -820,7 +822,7 @@ Planned Fix: This bug is not trivial to fix for all Q1, Q2, and Q3 subjects with
 
 ***Users who need to fix the files before we make the permanent fix***, a relatively simple [DIY fix of affected files](./DIY%20fix%20for%20zeroes%20near%20medial%20wall%20in%20rfMRI%20dtseries%20data.md) is available using the command "-cifti-dilate" in **wb\_command**.
 
-## **Missing Files**
+### **Missing Files**
 
 * + ***Missing fMRI Physio\_log Files***  
 	Some Q1+Q2 subjects are missing physiological data (\*\_Physio\_log.txt) for collected functional (rfMRI or tfMRI) sessions. The missing files were also documented in the Q2 Reference Manual, Appendix 8.  
@@ -854,6 +856,6 @@ Planned Fix: This bug is not trivial to fix for all Q1, Q2, and Q3 subjects with
 
 
 
-# Attachments
+#### Attachments
 
 - [prepare_level2_feat_analysis.sh](./assets/prepare_level2_feat_analysis.sh)
