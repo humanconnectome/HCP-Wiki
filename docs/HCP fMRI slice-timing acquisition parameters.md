@@ -1,3 +1,5 @@
+## HCP fMRI slice-timing acquisition parameters
+
 The HCP has received requests for slice-timing parameters for the HCP fMRI data and, therefore, we are providing this information with some background as to why the HCP does not apply slice-timing correction as part of its functional preprocessing (see [Smith et al. "Resting-state fMRI in the Human Connectome Project" NeuroImage, vol. 80, pp. 144-168, Oct. 2013](http://www.sciencedirect.com/science/article/pii/S1053811913005338) and  [Glasser et al. “The minimal preprocessing pipelines for the Human Connectome Project” Neuroimage, vol. 80, pp. 105–124, Oct. 2013](http://www.sciencedirect.com/science/article/pii/S1053811913005053)).
 
 Note that beyond just the issue of whether STC is even necessary or beneficial, the issue of *when* to apply STC in a processing stream is complicated and the subject of some debate, since from a theoretical perspective, motion correction and STC should really be applied jointly, rather than separately/serially in a processing stream ([Roche, 2011](https://ieeexplore.ieee.org/document/5737791/authors#authors)).
@@ -12,7 +14,7 @@ AFNI and SPM apply STC before motion correction, whereas FSL applies it after. 
 
 This would be even more true for the short TR data of the HCP.  So, if STC is applied to HCP fMRI data, it is likely best to apply it to the minimally preprocessed data (i.e., after gradient nonlinearity correct, motion correction, and B0 distortion correction).
 
-## **3T**
+### **3T**
 
 The slice timing of the HCP fMRI is non-trivial due to the multi-band nature of the acquisition (MB=8 was used on rfMRI and tfMRI). Examples of the timing for both an even or odd number of total slices, and differing MB factors are provided in the following file:    
 
@@ -26,7 +28,7 @@ In the following text file, we have extracted the slice timing order info for an
 
 BOLD acquisition times (in ms) extracted from {Subject\_ID}/REST1\_RL, 2nd DICOM: 
 
-## **7T**
+### **7T**
 
 Assuming that the sequence at the time of the HCP-YA 7T data collection encoded the slice-time information correctly, this should be the slice timing info for the 7T fMRI data [obtained from the sidecar json by running a modern version of dcm2niix (“v1.0.20220720”) on a set of fMRI DICOMS from the 7T data]:
 
@@ -124,7 +126,7 @@ Note that these values should only be considered accurate to 0.0025 sec. (2.5 ms
 ```
 
 
-# Attachments
+### Attachments
 
 - [CMRR_MB_Slice_Order.pdf](./assets/CMRR_MB_Slice_Order.pdf)
 - [MosaicRefAcqTimes.txt](./assets/MosaicRefAcqTimes.txt)
