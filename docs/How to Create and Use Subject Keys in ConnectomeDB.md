@@ -1,3 +1,5 @@
+## How to Create and Use Subject Keys in ConnectomeDB
+
 In any paper that links individual subject data and restricted data for subjects (e.g. twin status, family structure, exact age, BMI, etc.) from the HCP dataset, authors must generate their own **Coded IDs** rather than use the original HCP Subject ID. In ConnectomeDB, we allow authors to upload a **Subject Key**: a collection of Coded IDs that link to the HCP IDs for each cited subject. 
 
 > [!note] 
@@ -5,9 +7,9 @@ In any paper that links individual subject data and restricted data for subjects
   
 
 
-## Step-by-step guide
+### Step-by-step guide
 
-### Part 1: Naming your subject key
+#### Part 1: Naming your subject key
 
  ![](https://www.humanconnectome.org/img/tutorial/subject-keys/1-sk-tab-selected.png) 
 
@@ -20,11 +22,11 @@ In any paper that links individual subject data and restricted data for subjects
   
 
 
-### Part 2: Entering Your Coded IDs
+#### Part 2: Entering Your Coded IDs
 
  ![](https://www.humanconnectome.org/img/tutorial/subject-keys/2-sk-proj-created.PNG) 
 
-####  ![](https://humanconnectome.org/storage/app/media/tutorials/subject_keys/2-sk-proj-created.png)
+#####  ![](https://humanconnectome.org/storage/app/media/tutorials/subject_keys/2-sk-proj-created.png)
 
 1. **Click the "Upload Coded IDs Into Subject Key" button** on the Subject Key report page.
 2. **Create a simple spreadsheet** associating your Coded IDs with the original HCP Subject IDs, and save it as a CSV file. We recommend adding your Subject IDs and Coded IDs to the template file available to download.
@@ -39,11 +41,11 @@ In any paper that links individual subject data and restricted data for subjects
   
 
 
-### Part 3: Entering Your Publication Info
+#### Part 3: Entering Your Publication Info
 
  ![](https://www.humanconnectome.org/img/tutorial/subject-keys/3-sk-add-pub.PNG) 
 
-####  ![](https://humanconnectome.org/storage/app/media/tutorials/subject_keys/3-sk-add-pub.png)
+#####  ![](https://humanconnectome.org/storage/app/media/tutorials/subject_keys/3-sk-add-pub.png)
 
 1. **Click the "Add Article" button** on the Subject Key report page.
 2. **Enter your article's PMID in the PubMed search field**. The PMID is a string of digits used to uniquely identify your article. The easiest place to find it is in the URL of your article's PubMed entry. Example: [http://www.ncbi.nlm.nih.gov/pubmed/**23684880**](http://www.ncbi.nlm.nih.gov/pubmed/23684880).
@@ -52,7 +54,7 @@ In any paper that links individual subject data and restricted data for subjects
   
 
 
-### Part 4: Publish Your Subject Key
+#### Part 4: Publish Your Subject Key
 
  ![](https://www.humanconnectome.org/img/tutorial/subject-keys/4-sk-share.PNG) 
 
