@@ -1,3 +1,5 @@
+## Understanding Timing Information in HCP Physiological Monitoring Files
+
 The goal of this document is to lay out our understanding of the timing information contained in HCP-YA physiological monitoring logs.
 
 * Recording raw physiological log files
