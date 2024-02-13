@@ -1,4 +1,6 @@
-## Purpose:  Extend your exposure to nuts and bolts of AWS cloud computing so that you can translate what you may be used to doing locally to more scalable, reproducible, and meta-analyzable compute infrastructure.  Knowing this stuff will make using that stuff more intuitive.
+## How to Create an Ubuntu Instance in the AWS account that the NDA gives you when you request access to computational credits
+
+### Purpose:  Extend your exposure to nuts and bolts of AWS cloud computing so that you can translate what you may be used to doing locally to more scalable, reproducible, and meta-analyzable compute infrastructure.  Knowing this stuff will make using that stuff more intuitive.
 
 * [computational credits](https://nda.nih.gov/get/computational-credits.html) in an NDA managed AWS account.  Not strictly necessary to experiment with AWS, but if the NIH keeps pushing cloud computing, you might as well have the NIH also pay for your tutelage (this is the purpose of the computational credits, after all).  Once approved, the NDA will send you instructions (and a password that expires quickly).  **We cost the NDA at least $900 in AWS experiments to write this tutorial**.
 * A separate window with  for quick reference when you start drowning in acronym soup
@@ -88,7 +90,7 @@ G. Turn off and delete everything so you (or taxpayers) don't get charged
 
 
 
-# Attachments
+### Attachments
 
 - ![](./assets/image2021-2-12_16-52-48.png)
 - ![](./assets/image2021-2-12_16-48-33.png)
