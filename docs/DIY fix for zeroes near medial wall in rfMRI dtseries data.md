@@ -1,3 +1,4 @@
+## DIY fix for zeroes near medial wall in rfMRI dtseries data
 
 A DIY fix of rfMRI time series data with empty vertices (timeseries = 0s) very near the medial wall is available using the command "-cifti-dilate" in **wb\_command**. wb\_command is a suite of command line utilities distributed as part of **Connectome Workbench**, our HCP visualization and analysis platform. The current distribution of Connectome Workbench is available for download at: <http://humanconnectome.org/connectome/get-connectome-workbench.html> .
 
