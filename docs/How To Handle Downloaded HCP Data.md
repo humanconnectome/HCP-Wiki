@@ -1,3 +1,5 @@
+## How To Handle Downloaded HCP Data
+
 Now that you have downloaded the data you want, here’s some tips for handling the data:
 
 * Each download package consists of a .zip archive, and an md5 checksum. After you download the data you want, you can use the md5 file to verify the integrity of your downloaded file. [See this tutorial on codejacked.com for MD5 verification instructions](http://www.codejacked.com/using-md5sum-to-validate-the-integrity-of-downloaded-files/).
@@ -11,7 +13,7 @@ Now that you have downloaded the data you want, here’s some tips for handling 
   
 
 
-## Directory Structure for Unprocessed MR Data
+### Directory Structure for Unprocessed MR Data
 
 Unprocessed datasets downloaded from ConnectomeDB are organized into subject-specific and modality-specific archives. When unpacked, they are moved into a <subject\_id>/unprocessed/3T/ subdirectory (by creating it if not present, or placing into existing directories if present). If you have ordered Connectome in a Box, the directory structure is the same as the unpacked downloaded data. A full list of file names in each directory and subdirectory is provided in [Appendix 3: File Names and Directory Structure for 1200 Subjects Data](http://humanconnectome.org/storage/app/media/documentation/s1200/HCP_S1200_Release_Appendix_III.pdf), Section A.
 
@@ -166,13 +168,13 @@ Diffusion/
   
 
 
-## Directory Structure for Preprocessed MR data
+### Directory Structure for Preprocessed MR data
 
 Preprocessed datasets downloaded from ConnectomeDB unpack into subdirectories under the <subject\_id>/ parent directory (by creating them if not present, or placing into existing directories if present). If you have ordered Connectome in a Box or are using HCP data in the AWS S3 bucket, the directory structure is the same as the unpacked downloaded data.
 
 Preprocessing generates thousands of files, many of which are of little or no use. Therefore, in the preprocessed dataset package for each subject HCP only releases a subset of files that are likely to be of general use to investigators. A list of file names in each directory and subdirectory is provided in [Appendix 3B](http://humanconnectome.org/storage/app/media/documentation/s1200/HCP_S1200_Release_Appendix_III.pdf).
 
-### Structural data (both MSM-Sulc and MSM-All registered)
+#### Structural data (both MSM-Sulc and MSM-All registered)
 
 * **T1w/** contains T1w and T2w volume data
 * **T1w/Native/** contains FreeSurfer surfaces in their native mesh and original dimensions after rigid-body rotation to AC-PC alignment.
@@ -181,7 +183,7 @@ Preprocessing generates thousands of files, many of which are of little or no us
 * **MNINonLinear/xfms/** contains files encoding the transformation between acpc and MNINonLinear volumetric space.
 * **MNINonLinear/fsaverage\_LR32k/** contains files spatially downsampled to a 32k mesh (average vertex spacing of ~2 mm), which is useful for analyses of rfMRI and dMRI connectivity data. As above, a Connectome Workbench-readable \*32k\_fs\_LR.wb.spec file is included for quickly reading and visualizing many of these files in Workbench.
 
-### fMRI data
+#### fMRI data
 
 * **MNINonLinear/Results/** contains volumetric and CIFTI grayordinates data for rfMRI scans (15 min each), motion parameters, and physiological data in four subdirectories,
 	+ rfMRI\_REST1\_RL
@@ -210,7 +212,7 @@ The \*.d[type].nii files in these directories are in CIFTI format (based on NIFT
 
 Each of the directories above contain an .fsf file and a “EVs” directory containing explanatory variables. These files can be used to run first-level analyses in the FSL 5 program FEAT. The directories above also contain a \*TAB.txt file containing the timing of events, so that researchers might create their own explanatory variables of interest.
 
-### Motion parameters
+#### Motion parameters
 
 Estimates of motion parameters are saved into two different files: Movement\_Regressors.txt and Movement\_Regressors\_dt.txt. The first file (Movement\_Regressors.txt) contains 12 variables. The first six variables are the motion parameters estimates from a rigid-body transformation to the SBRef image acquired at the start of each fMRI scan.
 
@@ -249,7 +251,7 @@ In the preprocessed data, these directories contain an .fsf file that can be use
   
 
 
-### Diffusion Data
+#### Diffusion Data
 
 Diffusion data includes diffusion weighting, direction, time series, brain mask, and gradient nonlinearity data, with the following files and directory structure:
 
