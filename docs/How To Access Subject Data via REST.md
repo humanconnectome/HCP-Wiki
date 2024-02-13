@@ -1,3 +1,5 @@
+## How To Access HCP-YA Subject Data via REST
+
 For the [HCP 1200 Release](http://humanconnectome.org/study/hcp-young-adult/document/1200-subjects-data-release), unprocessed and processed data for a subject can be accessed via REST calls apart from using other modes such as Connectome In a Box, Aspera, Amazon AWS. 
 
 In order to access data for a subject, you will need to register at [https://db.humanconnectome.org](https://db.humanconnectome.org.)
@@ -74,7 +76,7 @@ done < $subject_list_file
 
 
 
-# Attachments
+### Attachments
 
 - [jstree.min.js](./assets/jstree.min.js)
 - [jstree.js](./assets/jstree.js)
