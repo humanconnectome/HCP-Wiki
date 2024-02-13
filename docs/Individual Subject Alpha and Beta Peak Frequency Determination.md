@@ -1,4 +1,6 @@
-## Overview
+## Individual Subject Alpha and Beta Peak Frequency Determination
+
+### Overview
 
 Alpha and beta frequency bands represent two of the strongest oscillations in the human brain. Alpha oscillations are believed to have an inhibitory role and to originate from the thalamus. Beta oscillations are mostly dominant in the sensorimotor cortex and are associated with a "status quo" signalling mechanism.
 
@@ -23,9 +25,9 @@ The second step is represented by pipeline hcp\_avgspecmanualalphabeta.m ( and u
   
 
 
-## Step 1 - Pipeline "hcp\_avgspecextract.m"
+### Step 1 - Pipeline "hcp\_avgspecextract.m"
 
-### Details
+#### Details
 
 The sensor array has been divided into 4 quadrants
 
@@ -41,7 +43,7 @@ For the Story Math task there are 2 data groups TEV and TRESP. From the TEV data
 
 For all the above cases and for each of the sensor group the average spectrum is saved.
 
-### Input
+#### Input
 
  
 
@@ -58,7 +60,7 @@ For all the above cases and for each of the sensor group the average spectrum is
 
  
 
-### Output
+#### Output
 
   
 
@@ -75,9 +77,9 @@ For all the above cases and for each of the sensor group the average spectrum is
   
 
 
-## Step 2 - Pipeline "hcp\_avgspecmanualalphabeta.m"
+### Step 2 - Pipeline "hcp\_avgspecmanualalphabeta.m"
 
-### Details
+#### Details
 
 After the casespectra files have been created , they can be used in the Graphical Interface pipeline hcp\_avgspecmanualalphabeta.m  where the spectra across all tasks can be assessed for a given subject.
 
@@ -159,7 +161,7 @@ The alpha and beta peaks are saved and the GUI closes after the "EXIT" button is
   
 
 
-### Input
+#### Input
 
   
 
@@ -174,7 +176,7 @@ The alpha and beta peaks are saved and the GUI closes after the "EXIT" button is
   
 
 
-### Output
+#### Output
 
   
 
