@@ -6,7 +6,7 @@ title: HCP Public Pages
 description: "Resources for the Human Connectome Projects"
 author: Jenn Elam
 
-url: # (optional) https://example.com, defaults to http://localhost:4000 in development
+url: https://wiki.humanconnectome.org
 
 permalink: # date # how your URLs are built, see https://jekyllrb.com/docs/permalinks/#builtinpermalinkstyles
 
