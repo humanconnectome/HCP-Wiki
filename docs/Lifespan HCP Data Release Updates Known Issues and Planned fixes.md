@@ -6,6 +6,24 @@ The Lifespan Human Connectome Project (HCP) HCP-Aging and HCP-Development projec
 
 #### **Major Issues**
 
+* **7/29/2024: **Missing NIH Toolbox Sadness ages 8-17 fixed form self-report data****
+
+* **A bug in the code transferring to NDA structures was found that overwrote NIH Toolbox Sadness ages 8-17 fixed form self-report data with parent data causing the self-report data to be omitted from the 2.0 release.**
+
+Planned fix: We have removed the bug and the NIH Toolbox Sadness ages 8-17 fixed form self-report data will be included in the 3.0 release. 
+
+* **11/13/2023: **Testosterone units change across HCA subjects****
+
+**The lab used to determine blood testrosterone levels for HCA changed reported units between batches of subjects across the study causing a 100x difference in values for subjects on the different scales. Due to the typical differences in testosterone levels between males and females the scale difference causes ambiguity in the data.**
+
+Planned fix:Using the raw data we are having the lab recalculate testosterone levels across HCA. New values will be included in the LS 3.0 release.
+
+* **11/10/2023: **Missing components/Miscalculated summary scores for PSQI, IPAQ, and MOCA****
+
+**Summary scores for Pittsburg Sleep Quality Index (PSQI, both HCA and HCD subjects 18+), International Physical Activity Questionnaires (IPAQ, HCA only), and Montreal Cognitive Assessment (MoCA, HCA only), were miscalulated for some subjects with component scores of values not specified correctly and deemed missing by the RedCAP scoring algorithm.**
+
+Planned fix:The missing component scores will be restored and summary scores recalculated to be included in the LS 3.0 release.
+
 * **3/27/2023: **Subject HCD0026119 missing one resting state run in the unprocessed data****
 
 **The rfMRI\_REST2\_PA run is missing in the unprocessed dataset on NDA, but is present in the preprocessed dataset on NDA. The missing run was dropped from the unprocessed data upload unintentionally.**
