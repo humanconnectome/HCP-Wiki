@@ -8,7 +8,7 @@ The Lifespan Human Connectome Project (HCP) HCP-Aging and HCP-Development projec
 
 * **7/29/2024: **Missing NIH Toolbox Sadness ages 8-17 fixed form self-report data****
 
-* **A bug in the code transferring to NDA structures was found that overwrote NIH Toolbox Sadness ages 8-17 fixed form self-report data with parent data causing the self-report data to be omitted from the 2.0 release.**
+**A bug in the code transferring to NDA structures was found that overwrote NIH Toolbox Sadness ages 8-17 fixed form self-report data with parent data causing the self-report data to be omitted from the 2.0 release.**
 
 Planned fix: We have removed the bug and the NIH Toolbox Sadness ages 8-17 fixed form self-report data will be included in the 3.0 release. 
 
