@@ -24,7 +24,9 @@ Some subjects had focal anomalies that are considered as normal variants or beni
 A description and images of the location and kind of anomaly for each of these subjects are detailed in the following spreadsheet of Anatomical QC Findings: 
 **[Anatomical-Issues-Subjects-pptxmatch.xlsx](https://github.com/jese11/HCP-wiki-public/files/13908468/Anatomical-Issues-Subjects-pptxmatch.xlsx)**
 
-and in the accompanying PDF of powerpoint slides showing Anatomical QC Findings: **Anatomical-Issues-Subjects-xlsxmatch.pdf** (available upon request to elam@wustl.edu).
+and in the accompanying PDFs of powerpoint slides showing Anatomical QC Findings: **Anatomical-Issues-Subjects-xlsxmatch.pdf** (available upon request to elam@wustl.edu). 
+**[Anatomical-Issues-Subjects-xlsxmatch-part1.pdf](https://github.com/user-attachments/files/16617183/Anatomical-Issues-Subjects-xlsxmatch-part1.pdf)** 
+**[Anatomical-Issues-Subjects-xlsxmatch-part2.pdf](https://github.com/user-attachments/files/16617244/Anatomical-Issues-Subjects-xlsxmatch-part2.pdf)**
 
 Main HCP Issue A Subjects:
 
@@ -43,7 +45,8 @@ Subjects with focal segmentation and surface errors in their structural pipeline
 A description and images of the location and kind of error for each of these subjects are detailed in the following Spreadsheet of Segmentation/Surface QC Findings:
 **[Segmentation-Issues-Subjects-pptxmatch.xlsx](https://github.com/jese11/HCP-wiki-public/files/13908559/Segmentation-Issues-Subjects-pptxmatch.xlsx)**
 and in the accompanying PDF of powerpoint slides showing Segmentation/Surface QC Findings: **Segmentation-Issues-Subjects-xlsxmatch.pdf** (available upon request to elam@wustl.edu).
-
+**[Segmentation-Issues-Subjects-xlsxmatch-part1.pdf](https://github.com/user-attachments/files/16617545/Segmentation-Issues-Subjects-xlsxmatch-part1.pdf)**  
+**[Segmentation-Issues-Subjects-xlsxmatch-part2.pdf](https://github.com/user-attachments/files/16617645/Segmentation-Issues-Subjects-xlsxmatch-part2.pdf)**
 
 Main HCP Issue B Subjects:
 
