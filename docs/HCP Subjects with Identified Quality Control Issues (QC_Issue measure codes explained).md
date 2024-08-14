@@ -22,9 +22,7 @@ All HCP subject structural scans and FreeSurfer segmentation and surface outputs
 Some subjects had focal anomalies that are considered as normal variants or benign findings. We have released their data, but because of their altered anatomy, using data from these subjects may affect some analyses. These subjects are flagged with the issue code A in the QC_Issue measure.  
 
 A description and images of the location and kind of anomaly for each of these subjects are detailed in the following spreadsheet of Anatomical QC Findings: 
-**[Anatomical-Issues-Subjects-pptxmatch.xlsx](https://github.com/jese11/HCP-wiki-public/files/13908468/Anatomical-Issues-Subjects-pptxmatch.xlsx)**
-
-and in the accompanying PDFs of powerpoint slides showing Anatomical QC Findings:
+**[Anatomical-Issues-Subjects-pptxmatch.xlsx](https://github.com/jese11/HCP-wiki-public/files/13908468/Anatomical-Issues-Subjects-pptxmatch.xlsx)** and in the accompanying PDFs of powerpoint slides showing Anatomical QC Findings:
 **[Anatomical-Issues-Subjects-xlsxmatch-part1.pdf](https://github.com/user-attachments/files/16617183/Anatomical-Issues-Subjects-xlsxmatch-part1.pdf)** 
 **[Anatomical-Issues-Subjects-xlsxmatch-part2.pdf](https://github.com/user-attachments/files/16617244/Anatomical-Issues-Subjects-xlsxmatch-part2.pdf)**
 
