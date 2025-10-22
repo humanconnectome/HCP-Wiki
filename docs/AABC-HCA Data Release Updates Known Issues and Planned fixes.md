@@ -1,15 +1,4 @@
-## HCP-YA 7T Movie watching task clip info timing versions shown per individual subject
-
-There were 2 versions of the video clips shown for the 7T Movie watching task. 
-
-Detailed information on the origins of the clips used in the 4 movie watching scans in the protocol for 7T HCP-Young Adult subjects is available here: [HCP_7T_Movie_Info.csv](./assets/HCP_7T_Movie_Info.csv)
-
-Detailed timing info on the start and stop of each clip and REST block in each movie is available here:
-[HCP_7T_Movie_Clip_Timing.csv](./assets/HCP_7T_Movie_Clip_Timing.csv)
-
-#### 147 Subjects shown **V1** of the Movie clips (scanned before 8/22/14): 
-
-## Lifespan HCP Data Release Updates Known Issues and Planned fixes
+## Aging Adult Brain Connectome (AABC) Data Release Updates Known Issues and Planned fixes
 On this wiki page, we document known updates, data issues, bugs, and known missing files in the data distributed with each release and plans to fix or patch each bug. Date added is listed at the beginning of entries.
 
 ### AABC Release 1 (October 23, 2025)
